@@ -1,0 +1,108 @@
+{"id":"AQ001","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"ants","split":"dev","query":"ants","judgments":{"27:18":2}}
+{"id":"AQ002","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"ink","split":"dev","query":"ink","judgments":{"18:109":2,"31:27":2}}
+{"id":"AQ003","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"oath","split":"dev","query":"oaths","judgments":{"5:89":2,"16:91":2,"16:92":2,"16:94":2}}
+{"id":"AQ004","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"hoopoe","split":"holdout","query":"hoopoe","judgments":{"27:20":2}}
+{"id":"AQ005","intent":"single","difficulty":"easy","language":"en","field":"all","group":"spider","split":"dev","query":"spider","judgments":{"29:41":2}}
+{"id":"AQ006","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"elephant","split":"dev","query":"elephant","judgments":{"105:1":2}}
+{"id":"AQ007","intent":"single","difficulty":"easy","language":"ar","field":"ayah","group":"bee","split":"dev","query":"النحل","judgments":{"16:68":2}}
+{"id":"AQ008","intent":"single","difficulty":"easy","language":"ar","field":"ayah","group":"iron","split":"holdout","query":"الحديد","judgments":{"57:25":2}}
+{"id":"AQ009","intent":"single","difficulty":"easy","language":"bn","field":"bn_tafsir","group":"backbiting","split":"dev","query":"গীবত","judgments":{"49:12":2}}
+{"id":"AQ010","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"donkey","split":"dev","query":"donkeys","judgments":{"31:19":2}}
+{"id":"AQ011","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"pearl","split":"dev","query":"pearls","judgments":{"56:23":2,"76:19":2}}
+{"id":"AQ012","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"mirage","split":"holdout","query":"mirage","judgments":{"24:39":2,"78:20":2}}
+{"id":"AQ013","intent":"single","difficulty":"easy","language":"en","field":"translation","group":"chest","split":"holdout","query":"chest","judgments":{"20:39":2}}
+{"id":"AQ014","intent":"single","difficulty":"easy","language":"ar","field":"ayah","group":"spider","split":"dev","query":"العنكبوت","judgments":{"29:41":2}}
+{"id":"AQ015","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"patience","split":"dev","query":"patience prayer","judgments":{"2:45":2,"2:153":2}}
+{"id":"AQ016","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"fasting","split":"dev","query":"fasting decreed","judgments":{"2:183":2}}
+{"id":"AQ017","intent":"multi","difficulty":"medium","language":"en","field":"all","group":"fasting","split":"dev","query":"fasting prescribed","judgments":{"2:183":2}}
+{"id":"AQ018","intent":"multi","difficulty":"hard","language":"en","field":"all","group":"fasting","split":"dev","query":"fastng prescribed","judgments":{"2:183":2}}
+{"id":"AQ019","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"hardship","split":"holdout","query":"hardship ease","judgments":{"94:5":2,"94:6":2,"65:7":2}}
+{"id":"AQ020","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"light","split":"dev","query":"lamp glass","judgments":{"24:35":2}}
+{"id":"AQ021","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"cave","split":"holdout","query":"youths cave mercy","judgments":{"18:10":2}}
+{"id":"AQ022","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"testimony","split":"holdout","query":"justice witnesses parents","judgments":{"4:135":2}}
+{"id":"AQ023","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"joseph","split":"dev","query":"Joseph sorrow eyes","judgments":{"12:84":2}}
+{"id":"AQ024","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"seas","split":"holdout","query":"barrier seas transgress","judgments":{"55:19":2,"55:20":2}}
+{"id":"AQ025","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"backbiting","split":"dev","query":"spy assumption backbite","judgments":{"49:12":2}}
+{"id":"AQ026","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"pledge","split":"holdout","query":"pledge tree reward","judgments":{"48:18":2}}
+{"id":"AQ027","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"trade","split":"holdout","query":"trade Friday prayer","judgments":{"62:9":2}}
+{"id":"AQ028","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"debt","split":"holdout","query":"debt scribe term","judgments":{"2:282":2}}
+{"id":"AQ029","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"denied","split":"dev","query":"favors Lord deny","judgments":{"55:13":2,"55:16":2,"55:18":2,"55:21":2}}
+{"id":"AQ030","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"kingship","split":"holdout","query":"kingdom death life deeds","judgments":{"67:1":2,"67:2":2}}
+{"id":"AQ031","intent":"multi","difficulty":"medium","language":"en","field":"all","group":"decree","split":"dev","query":"decree night months","judgments":{"97:3":2}}
+{"id":"AQ032","intent":"multi","difficulty":"medium","language":"en","field":"translation","group":"creation","split":"holdout","query":"water every living thing","judgments":{"21:30":2}}
+{"id":"AQ033","intent":"phrase","difficulty":"easy","language":"en","field":"translation","group":"light","split":"dev","query":"light upon light","judgments":{"24:35":2}}
+{"id":"AQ034","intent":"phrase","difficulty":"easy","language":"en","field":"all","group":"decree","split":"dev","query":"night of decree","judgments":{"97:1":2,"97:2":2,"97:3":2}}
+{"id":"AQ035","intent":"phrase","difficulty":"easy","language":"en","field":"translation","group":"patience","split":"dev","query":"seek help through patience and prayer","judgments":{"2:45":2,"2:153":2}}
+{"id":"AQ036","intent":"phrase","difficulty":"easy","language":"en","field":"translation","group":"cave","split":"holdout","query":"the youths retreated to the cave","judgments":{"18:10":2}}
+{"id":"AQ037","intent":"phrase","difficulty":"easy","language":"en","field":"translation","group":"rope","split":"holdout","query":"rope of Allah","judgments":{"3:103":2}}
+{"id":"AQ038","intent":"phrase","difficulty":"easy","language":"en","field":"translation","group":"kingship","split":"holdout","query":"created death and life","judgments":{"67:2":2}}
+{"id":"AQ039","intent":"phrase","difficulty":"easy","language":"en","field":"translation","group":"throne","split":"holdout","query":"neither drowsiness overtakes him nor sleep","judgments":{"2:255":2}}
+{"id":"AQ040","intent":"phrase","difficulty":"easy","language":"en","field":"translation","group":"backbiting","split":"dev","query":"eat the flesh of his brother","judgments":{"49:12":2}}
+{"id":"AQ041","intent":"phrase","difficulty":"easy","language":"en","field":"translation","group":"forgiveness","split":"dev","query":"do not despair of the mercy","judgments":{"39:53":2}}
+{"id":"AQ042","intent":"phrase","difficulty":"medium","language":"en","field":"translation","group":"jugular","split":"dev","query":"\"closer to him than\" jugular","judgments":{"50:16":2}}
+{"id":"AQ043","intent":"phrase","difficulty":"easy","language":"ar","field":"ayah","group":"decree","split":"dev","query":"ليلة القدر","judgments":{"97:1":2,"97:2":2,"97:3":2}}
+{"id":"AQ044","intent":"phrase","difficulty":"easy","language":"ar","field":"ayah","group":"light","split":"dev","query":"نور على نور","judgments":{"24:35":2}}
+{"id":"AQ045","intent":"phrase","difficulty":"medium","language":"ar","field":"ayah","group":"hardship","split":"holdout","query":"فَإِنَّ مَعَ الْعُسْرِ يُسْرًا","judgments":{"94:5":2}}
+{"id":"AQ046","intent":"phrase","difficulty":"easy","language":"bn","field":"bn_tafsir","group":"hardship","split":"holdout","query":"কষ্টের সাথেই তো স্বস্তি","judgments":{"94:5":2}}
+{"id":"AQ047","intent":"phrase","difficulty":"medium","language":"bn","field":"bn_tafsir","group":"parents","split":"dev","query":"পিতা-মাতার প্রতি সদ্ব্যবহার","judgments":{"17:23":2}}
+{"id":"AQ048","intent":"phrase","difficulty":"medium","language":"en","field":"translation","group":"hardship","split":"holdout","query":"WITH HARDSHIP, WILL BE EASE","judgments":{"94:5":2,"94:6":2}}
+{"id":"AQ049","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"patience","split":"dev","query":"الصبر الصلاة","judgments":{"2:45":2,"2:153":2}}
+{"id":"AQ050","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"fasting","split":"dev","query":"كتب عليكم الصيام","judgments":{"2:183":2}}
+{"id":"AQ051","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"throne","split":"holdout","query":"لا تأخذه سنة ولا نوم","judgments":{"2:255":2}}
+{"id":"AQ052","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"speech","split":"holdout","query":"واحلل عقدة من لساني","judgments":{"20:27":2}}
+{"id":"AQ053","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"forgiveness","split":"dev","query":"لا تقنطوا من رحمة الله","judgments":{"39:53":2}}
+{"id":"AQ054","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"rope","split":"holdout","query":"واعتصموا بحبل الله جميعا","judgments":{"3:103":2}}
+{"id":"AQ055","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"parents","split":"dev","query":"وبالوالدين إحسانا","judgments":{"17:23":2,"4:36":2,"6:151":2}}
+{"id":"AQ056","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"seas","split":"holdout","query":"مرج البحرين","judgments":{"55:19":2,"25:53":2}}
+{"id":"AQ057","intent":"multilingual","difficulty":"medium","language":"ar","field":"ayah","group":"backbiting","split":"dev","query":"اجتنبوا كثيرا من الظن","judgments":{"49:12":2}}
+{"id":"AQ058","intent":"multilingual","difficulty":"medium","language":"bn","field":"bn_tafsir","group":"patience","split":"dev","query":"সবর সালাত সাহায্য","judgments":{"2:45":2,"2:153":2}}
+{"id":"AQ059","intent":"multilingual","difficulty":"medium","language":"bn","field":"bn_tafsir","group":"fasting","split":"dev","query":"সিয়ামের বিধান","judgments":{"2:183":2}}
+{"id":"AQ060","intent":"multilingual","difficulty":"medium","language":"bn","field":"bn_tafsir","group":"light","split":"dev","query":"আসমানসমূহ ও যমীনের নূর","judgments":{"24:35":2}}
+{"id":"AQ061","intent":"multilingual","difficulty":"medium","language":"bn","field":"bn_tafsir","group":"decree","split":"dev","query":"মহিমান্বিত রাত","judgments":{"97:1":2,"97:2":2,"97:3":2}}
+{"id":"AQ062","intent":"multilingual","difficulty":"medium","language":"bn","field":"bn_tafsir","group":"backbiting","split":"dev","query":"মৃত ভাইয়ের গোশত","judgments":{"49:12":2}}
+{"id":"AQ063","intent":"multilingual","difficulty":"hard","language":"mixed","field":"all","group":"decree","split":"dev","query":"Laylat al Qadr ليلة القدر","judgments":{"97:1":2,"97:2":2,"97:3":2}}
+{"id":"AQ064","intent":"multilingual","difficulty":"hard","language":"mixed","field":"all","group":"fasting","split":"dev","query":"صيام fasting obligation","judgments":{"2:183":2}}
+{"id":"AQ065","intent":"multilingual","difficulty":"hard","language":"mixed","field":"all","group":"hardship","split":"holdout","query":"কষ্টের সাথে relief","judgments":{"94:5":2,"94:6":2}}
+{"id":"AQ066","intent":"multilingual","difficulty":"hard","language":"ar","field":"translation","group":"cave","split":"holdout","query":"ما الدعاء الذي قاله الفتية عندما لجؤوا إلى الكهف؟","judgments":{"18:10":2}}
+{"id":"AQ067","intent":"multilingual","difficulty":"hard","language":"bn","field":"translation","group":"ants","split":"dev","query":"যে প্রাণীটি তার সঙ্গীদের সৈন্যদের পায়ের নিচে পড়া থেকে সতর্ক করেছিল","judgments":{"27:18":2}}
+{"id":"AQ068","intent":"multilingual","difficulty":"hard","language":"en","field":"ayah","group":"donkey","split":"dev","query":"Which passage likens an unpleasant noise to a donkey's call?","judgments":{"31:19":2}}
+{"id":"AQ069","intent":"multilingual","difficulty":"hard","language":"bn","field":"translation","group":"trade","split":"holdout","query":"জুমার ডাক শুনলে কেনাবেচা সম্পর্কে কী নির্দেশ আছে?","judgments":{"62:9":2}}
+{"id":"AQ070","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"capacity","split":"holdout","query":"Can people be assigned obligations beyond what they can handle?","judgments":{"2:286":2,"6:152":2,"7:42":2,"23:62":2,"65:7":2}}
+{"id":"AQ071","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"parents","split":"dev","query":"How should I speak to my aging mother when I feel irritated?","judgments":{"17:23":2,"17:24":1}}
+{"id":"AQ072","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"joseph","split":"dev","query":"Find the story where a piece of clothing restored a father's eyesight.","judgments":{"12:93":2,"12:96":2}}
+{"id":"AQ073","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"seas","split":"holdout","query":"Where are two bodies of water kept apart even though they meet?","judgments":{"55:19":1,"55:20":2,"25:53":2}}
+{"id":"AQ074","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"judgment","split":"dev","query":"What questions will be asked on the Day of Judgment?","judgments":{"102:8":2,"15:92":1,"15:93":1,"7:6":1}}
+{"id":"AQ075","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"forgiveness","split":"dev","query":"Is there still hope after I've done a lot of wrong?","judgments":{"39:53":2,"4:110":2}}
+{"id":"AQ076","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"burden","split":"dev","query":"Can someone else be held responsible for what I did?","judgments":{"6:164":2,"17:15":2,"35:18":2,"39:7":2,"53:38":2}}
+{"id":"AQ077","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"enmity","split":"dev","query":"What can I do to turn someone hostile into a close ally?","judgments":{"41:34":2}}
+{"id":"AQ078","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"backbiting","split":"dev","query":"What image is used to show how ugly it is to talk behind someone's back?","judgments":{"49:12":2}}
+{"id":"AQ079","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"speech","split":"holdout","query":"Where does a prophet ask to be understood when he speaks?","judgments":{"20:25":1,"20:26":1,"20:27":1,"20:28":2}}
+{"id":"AQ080","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"trade","split":"holdout","query":"When do worshippers have to stop doing business and come to the weekly gathering?","judgments":{"62:9":2}}
+{"id":"AQ081","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"shade","split":"dev","query":"Where does a prophet ask for whatever help God might send after helping strangers?","judgments":{"28:24":2}}
+{"id":"AQ082","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"testimony","split":"holdout","query":"Should I tell the truth in court even if it hurts my relatives?","judgments":{"4:135":2}}
+{"id":"AQ083","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"justice","split":"dev","query":"How should I treat a group I strongly dislike when making a judgment?","judgments":{"5:8":2}}
+{"id":"AQ084","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"ink","split":"dev","query":"Where are oceans used as an image for how inexhaustible God's words are?","judgments":{"18:109":2,"31:27":2}}
+{"id":"AQ085","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"fish","split":"holdout","query":"Which verse recalls a prophet asking for help from a dark place after he left in anger?","judgments":{"21:87":2}}
+{"id":"AQ086","intent":"semantic","difficulty":"hard","language":"ar","field":"all","group":"joseph","split":"dev","query":"كيف استعاد والد يوسف بصره؟","judgments":{"12:93":2,"12:96":2}}
+{"id":"AQ087","intent":"semantic","difficulty":"hard","language":"ar","field":"all","group":"enmity","split":"dev","query":"كيف يمكن أن يتحول من يعاديني إلى صديق؟","judgments":{"41:34":2}}
+{"id":"AQ088","intent":"semantic","difficulty":"hard","language":"ar","field":"all","group":"donkey","split":"dev","query":"أين جاء تشبيه الصوت المزعج بنهيق الحمار؟","judgments":{"31:19":2}}
+{"id":"AQ089","intent":"semantic","difficulty":"hard","language":"ar","field":"all","group":"burden","split":"dev","query":"هل يحاسب شخص على ذنب ارتكبه غيره؟","judgments":{"6:164":2,"17:15":2,"35:18":2,"39:7":2,"53:38":2}}
+{"id":"AQ090","intent":"semantic","difficulty":"hard","language":"ar","field":"all","group":"oath","split":"dev","query":"ما الذي يجب فعله للتكفير عن اليمين إذا حنث الشخص؟","judgments":{"5:89":2}}
+{"id":"AQ091","intent":"semantic","difficulty":"hard","language":"bn","field":"all","group":"parents","split":"dev","query":"বৃদ্ধ বাবা মায়ের সঙ্গে বিরক্ত হলে কেমন করে কথা বলব?","judgments":{"17:23":2,"17:24":1}}
+{"id":"AQ092","intent":"semantic","difficulty":"hard","language":"bn","field":"all","group":"shade","split":"dev","query":"অন্যদের সাহায্য করার পর কোন নবী নিজের অভাবের কথা বলে দোয়া করেছিলেন?","judgments":{"28:24":2}}
+{"id":"AQ093","intent":"semantic","difficulty":"hard","language":"bn","field":"all","group":"forgiveness","split":"dev","query":"অনেক ভুল করার পরও কি ক্ষমা পাওয়ার আশা আছে?","judgments":{"39:53":2,"4:110":2}}
+{"id":"AQ094","intent":"semantic","difficulty":"hard","language":"bn","field":"all","group":"capacity","split":"holdout","query":"মানুষের সামর্থ্যের বাইরে কি তার ওপর কোনো দায়িত্ব চাপানো হয়?","judgments":{"2:286":2,"6:152":2,"7:42":2,"23:62":2,"65:7":2}}
+{"id":"AQ095","intent":"semantic","difficulty":"hard","language":"bn","field":"all","group":"justice","split":"dev","query":"যাদের অপছন্দ করি তাদের বিচার করার সময় কেমন আচরণ করব?","judgments":{"5:8":2}}
+{"id":"AQ096","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"orphan","split":"holdout","query":"How should someone in my care be treated if they've lost a parent?","judgments":{"93:9":2,"4:2":2,"4:10":2,"107:2":2}}
+{"id":"AQ097","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"debt","split":"holdout","query":"Where does it say to record money someone owes when repayment is due later?","judgments":{"2:282":2}}
+{"id":"AQ098","intent":"semantic","difficulty":"hard","language":"en","field":"all","group":"light","split":"dev","query":"Which verse describes a tree used as the source of the oil in a lamp?","judgments":{"24:35":2}}
+{"id":"AQ099","intent":"no_answer","difficulty":"medium","language":"en","field":"all","group":"neg-tech","split":"dev","query":"How do I reset my Wi-Fi router?","judgments":{}}
+{"id":"AQ100","intent":"no_answer","difficulty":"hard","language":"en","field":"translation","group":"decree","split":"dev","query":"What is the exact Gregorian date of the Night of Decree in 2032?","judgments":{}}
+{"id":"AQ101","intent":"no_answer","difficulty":"hard","language":"en","field":"translation","group":"ants","split":"dev","query":"What was the name of the ant that spoke to Solomon?","judgments":{}}
+{"id":"AQ102","intent":"no_answer","difficulty":"hard","language":"en","field":"translation","group":"cave","split":"holdout","query":"What were the names of the youths who slept in the cave?","judgments":{}}
+{"id":"AQ103","intent":"no_answer","difficulty":"medium","language":"ar","field":"all","group":"neg-tech","split":"dev","query":"كيف أستعيد كلمة مرور حساب البريد الإلكتروني؟","judgments":{}}
+{"id":"AQ104","intent":"no_answer","difficulty":"medium","language":"bn","field":"all","group":"neg-bn","split":"holdout","query":"আমার ফোনের ব্যাটারি কীভাবে বদলাব?","judgments":{}}
+{"id":"AQ105","intent":"no_answer","difficulty":"hard","language":"ar","field":"translation","group":"joseph","split":"dev","query":"كم كان عمر يوسف بالتحديد عندما أُلقي في البئر؟","judgments":{}}
+{"id":"AQ106","intent":"no_answer","difficulty":"hard","language":"bn","field":"translation","group":"neg-geo","split":"dev","query":"নূহের নৌকাটি কত মিটার লম্বা ছিল?","judgments":{}}
+{"id":"AQ107","intent":"no_answer","difficulty":"hard","language":"en","field":"translation","group":"neg-hadith","split":"dev","query":"Where is the hadith about actions being judged by intentions?","judgments":{}}
+{"id":"AQ108","intent":"no_answer","difficulty":"medium","language":"en","field":"all","group":"neg-gibberish","split":"dev","query":"qxzv fjkptn","judgments":{}}

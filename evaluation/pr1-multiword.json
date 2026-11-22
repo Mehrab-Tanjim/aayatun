@@ -1,0 +1,878 @@
+{
+  "revisions": {
+    "base": "d9cff5d3f21dc11423465893fb1839dd6c9251c0",
+    "pr": "2cc15b3bf1cdb57c4bc7702e9b763c5417b32ea3"
+  },
+  "index_sha256": "5041ac0d7fbfebc44b9597c2b98e51419015251d18c360c3eaea386b1ec4af60",
+  "sqlite": "3.49.1",
+  "metrics": {
+    "base": {
+      "n": 18,
+      "answerable": 18,
+      "seed_hit_at_5": 0.833,
+      "seed_mrr_at_10": 0.723,
+      "no_answer_cases": 0,
+      "no_answer_with_results": 0,
+      "p95_ms": 222.61
+    },
+    "pr": {
+      "n": 18,
+      "answerable": 18,
+      "seed_hit_at_5": 0.833,
+      "seed_mrr_at_10": 0.723,
+      "no_answer_cases": 0,
+      "no_answer_with_results": 0,
+      "p95_ms": 186.689
+    }
+  },
+  "queries": [
+    {
+      "case": {
+        "id": "AQ015",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "patience",
+        "split": "dev",
+        "query": "patience prayer",
+        "judgments": {
+          "2:45": 2,
+          "2:153": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "2:153",
+            "2:45",
+            "70:5",
+            "18:72",
+            "18:75",
+            "18:67",
+            "16:127",
+            "18:68",
+            "18:78",
+            "2:250"
+          ],
+          "ms": 119.37
+        },
+        "pr": {
+          "results": [
+            "2:153",
+            "2:45",
+            "70:5",
+            "18:72",
+            "18:75",
+            "18:67",
+            "16:127",
+            "18:68",
+            "18:78",
+            "2:250"
+          ],
+          "ms": 60.723
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ016",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "fasting",
+        "split": "dev",
+        "query": "fasting decreed",
+        "judgments": {
+          "2:183": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "2:187",
+            "2:183",
+            "2:184",
+            "2:196",
+            "33:35",
+            "28:10",
+            "58:4",
+            "4:146",
+            "4:175",
+            "7:170"
+          ],
+          "ms": 167.257
+        },
+        "base": {
+          "results": [
+            "2:187",
+            "2:183",
+            "2:184",
+            "2:196",
+            "33:35",
+            "28:10",
+            "58:4",
+            "4:146",
+            "4:175",
+            "7:170"
+          ],
+          "ms": 156.029
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ017",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "all",
+        "group": "fasting",
+        "split": "dev",
+        "query": "fasting prescribed",
+        "judgments": {
+          "2:183": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "2:183",
+            "2:186",
+            "2:184",
+            "58:3",
+            "5:88",
+            "2:182",
+            "33:34",
+            "4:91",
+            "7:169",
+            "5:33"
+          ],
+          "ms": 140.686
+        },
+        "pr": {
+          "results": [
+            "2:183",
+            "2:186",
+            "2:184",
+            "58:3",
+            "5:88",
+            "2:182",
+            "33:34",
+            "4:91",
+            "7:169",
+            "5:33"
+          ],
+          "ms": 143.817
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ018",
+        "intent": "multi",
+        "difficulty": "hard",
+        "language": "en",
+        "field": "all",
+        "group": "fasting",
+        "split": "dev",
+        "query": "fastng prescribed",
+        "judgments": {
+          "2:183": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "2:180",
+            "2:178",
+            "2:246",
+            "5:48",
+            "2:183",
+            "24:1",
+            "22:34",
+            "42:42",
+            "2:235",
+            "33:49"
+          ],
+          "ms": 140.283
+        },
+        "base": {
+          "results": [
+            "2:180",
+            "2:178",
+            "2:246",
+            "5:48",
+            "2:183",
+            "24:1",
+            "22:34",
+            "42:42",
+            "2:235",
+            "33:49"
+          ],
+          "ms": 125.556
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ019",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "hardship",
+        "split": "holdout",
+        "query": "hardship ease",
+        "judgments": {
+          "94:5": 2,
+          "94:6": 2,
+          "65:7": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "94:5",
+            "94:6",
+            "65:7",
+            "7:95",
+            "3:134",
+            "2:280",
+            "2:185",
+            "92:7",
+            "87:8",
+            "51:3"
+          ],
+          "ms": 109.825
+        },
+        "pr": {
+          "results": [
+            "65:7",
+            "94:5",
+            "94:6",
+            "7:95",
+            "3:134",
+            "2:280",
+            "2:185",
+            "92:7",
+            "87:8",
+            "51:3"
+          ],
+          "ms": 93.336
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ020",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "light",
+        "split": "dev",
+        "query": "lamp glass",
+        "judgments": {
+          "24:35": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "24:35",
+            "76:15",
+            "27:44",
+            "78:13",
+            "33:46",
+            "71:16",
+            "25:61"
+          ],
+          "ms": 60.88
+        },
+        "base": {
+          "results": [
+            "24:35",
+            "76:15",
+            "27:44",
+            "78:13",
+            "33:46",
+            "71:16",
+            "25:61"
+          ],
+          "ms": 54.27
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ021",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "cave",
+        "split": "holdout",
+        "query": "youths cave mercy",
+        "judgments": {
+          "18:10": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "18:10",
+            "18:16",
+            "57:27",
+            "9:114",
+            "90:17",
+            "23:118",
+            "7:151",
+            "44:42",
+            "23:109",
+            "4:96"
+          ],
+          "ms": 96.631
+        },
+        "pr": {
+          "results": [
+            "18:10",
+            "18:16",
+            "57:27",
+            "9:114",
+            "90:17",
+            "23:118",
+            "7:151",
+            "44:42",
+            "23:109",
+            "4:96"
+          ],
+          "ms": 73.493
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ022",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "testimony",
+        "split": "holdout",
+        "query": "justice witnesses parents",
+        "judgments": {
+          "4:135": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "4:135",
+            "3:18",
+            "5:8",
+            "2:282",
+            "71:28",
+            "4:7",
+            "31:14",
+            "24:13",
+            "19:14",
+            "14:41"
+          ],
+          "ms": 106.229
+        },
+        "base": {
+          "results": [
+            "4:135",
+            "3:18",
+            "5:8",
+            "2:282",
+            "71:28",
+            "4:7",
+            "31:14",
+            "24:13",
+            "19:14",
+            "14:41"
+          ],
+          "ms": 95.968
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ023",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "joseph",
+        "split": "dev",
+        "query": "Joseph sorrow eyes",
+        "judgments": {
+          "12:84": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "12:84",
+            "35:34",
+            "18:6",
+            "12:90",
+            "70:44",
+            "90:8",
+            "12:11",
+            "12:55",
+            "56:22",
+            "12:26"
+          ],
+          "ms": 64.079
+        },
+        "pr": {
+          "results": [
+            "12:84",
+            "35:34",
+            "18:6",
+            "12:90",
+            "70:44",
+            "90:8",
+            "12:11",
+            "12:55",
+            "56:22",
+            "12:26"
+          ],
+          "ms": 47.261
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ024",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "seas",
+        "split": "holdout",
+        "query": "barrier seas transgress",
+        "judgments": {
+          "55:19": 2,
+          "55:20": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "27:61",
+            "25:53",
+            "36:9",
+            "82:3",
+            "55:20",
+            "55:19",
+            "81:6",
+            "55:8",
+            "31:27",
+            "18:94"
+          ],
+          "ms": 80.9
+        },
+        "base": {
+          "results": [
+            "27:61",
+            "25:53",
+            "36:9",
+            "82:3",
+            "55:20",
+            "55:19",
+            "81:6",
+            "55:8",
+            "31:27",
+            "18:94"
+          ],
+          "ms": 66.727
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ025",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "backbiting",
+        "split": "dev",
+        "query": "spy assumption backbite",
+        "judgments": {
+          "49:12": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "49:12",
+            "53:28",
+            "10:36",
+            "45:32",
+            "53:23",
+            "48:6",
+            "38:27",
+            "41:23",
+            "10:66",
+            "34:20"
+          ],
+          "ms": 77.091
+        },
+        "pr": {
+          "results": [
+            "49:12",
+            "53:28",
+            "10:36",
+            "45:32",
+            "53:23",
+            "48:6",
+            "38:27",
+            "41:23",
+            "10:66",
+            "34:20"
+          ],
+          "ms": 69.477
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ026",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "pledge",
+        "split": "holdout",
+        "query": "pledge tree reward",
+        "judgments": {
+          "48:18": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "9:10",
+            "9:8",
+            "48:10",
+            "8:56",
+            "4:81",
+            "60:12",
+            "7:22",
+            "44:43",
+            "56:72",
+            "53:14"
+          ],
+          "ms": 126.953
+        },
+        "base": {
+          "results": [
+            "9:10",
+            "9:8",
+            "48:10",
+            "8:56",
+            "4:81",
+            "60:12",
+            "7:22",
+            "44:43",
+            "56:72",
+            "53:14"
+          ],
+          "ms": 91.244
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ027",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "trade",
+        "split": "holdout",
+        "query": "trade Friday prayer",
+        "judgments": {
+          "62:9": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "62:9",
+            "2:275",
+            "4:103",
+            "77:48",
+            "76:25",
+            "37:165",
+            "70:22",
+            "31:4",
+            "24:58",
+            "70:34"
+          ],
+          "ms": 99.388
+        },
+        "pr": {
+          "results": [
+            "62:9",
+            "2:275",
+            "4:103",
+            "77:48",
+            "76:25",
+            "37:165",
+            "70:22",
+            "31:4",
+            "24:58",
+            "70:34"
+          ],
+          "ms": 99.511
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ028",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "debt",
+        "split": "holdout",
+        "query": "debt scribe term",
+        "judgments": {
+          "2:282": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "2:282",
+            "2:283",
+            "56:66",
+            "68:46",
+            "4:12",
+            "52:40",
+            "4:11",
+            "35:45",
+            "11:104",
+            "9:60"
+          ],
+          "ms": 130.606
+        },
+        "base": {
+          "results": [
+            "2:282",
+            "2:283",
+            "56:66",
+            "68:46",
+            "4:12",
+            "52:40",
+            "4:11",
+            "35:45",
+            "11:104",
+            "9:60"
+          ],
+          "ms": 135.817
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ029",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "denied",
+        "split": "dev",
+        "query": "favors Lord deny",
+        "judgments": {
+          "55:13": 2,
+          "55:16": 2,
+          "55:18": 2,
+          "55:21": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "55:63",
+            "55:47",
+            "55:65",
+            "55:69",
+            "55:61",
+            "55:25",
+            "55:49",
+            "55:59",
+            "55:16",
+            "55:51"
+          ],
+          "ms": 58.797
+        },
+        "pr": {
+          "results": [
+            "55:63",
+            "55:47",
+            "55:65",
+            "55:69",
+            "55:61",
+            "55:25",
+            "55:49",
+            "55:59",
+            "55:16",
+            "55:51"
+          ],
+          "ms": 44.464
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ030",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "kingship",
+        "split": "holdout",
+        "query": "kingdom death life deeds",
+        "judgments": {
+          "67:1": 2,
+          "67:2": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "45:21",
+            "53:44",
+            "44:8",
+            "50:43",
+            "40:68",
+            "15:23",
+            "57:2",
+            "23:80",
+            "33:16",
+            "9:116"
+          ],
+          "ms": 79.542
+        },
+        "base": {
+          "results": [
+            "45:21",
+            "53:44",
+            "44:8",
+            "50:43",
+            "40:68",
+            "15:23",
+            "57:2",
+            "23:80",
+            "33:16",
+            "9:116"
+          ],
+          "ms": 66.148
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ031",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "all",
+        "group": "decree",
+        "split": "dev",
+        "query": "decree night months",
+        "judgments": {
+          "97:3": 2
+        }
+      },
+      "runs": {
+        "base": {
+          "results": [
+            "97:3",
+            "97:2",
+            "97:1",
+            "9:36",
+            "17:12",
+            "17:1",
+            "97:4",
+            "44:3",
+            "97:5",
+            "44:4"
+          ],
+          "ms": 222.61
+        },
+        "pr": {
+          "results": [
+            "97:3",
+            "97:2",
+            "97:1",
+            "9:36",
+            "17:12",
+            "17:1",
+            "97:4",
+            "44:3",
+            "97:5",
+            "44:4"
+          ],
+          "ms": 186.689
+        }
+      }
+    },
+    {
+      "case": {
+        "id": "AQ032",
+        "intent": "multi",
+        "difficulty": "medium",
+        "language": "en",
+        "field": "translation",
+        "group": "creation",
+        "split": "holdout",
+        "query": "water every living thing",
+        "judgments": {
+          "21:30": 2
+        }
+      },
+      "runs": {
+        "pr": {
+          "results": [
+            "21:30",
+            "24:45",
+            "10:31",
+            "13:14",
+            "54:53",
+            "15:19",
+            "7:160",
+            "6:44",
+            "6:111",
+            "2:60"
+          ],
+          "ms": 100.419
+        },
+        "base": {
+          "results": [
+            "21:30",
+            "24:45",
+            "10:31",
+            "13:14",
+            "54:53",
+            "15:19",
+            "7:160",
+            "6:44",
+            "6:111",
+            "2:60"
+          ],
+          "ms": 90.388
+        }
+      }
+    }
+  ]
+}

@@ -13,6 +13,7 @@ REVISIONS = {
     "deploy": "d9cff5d3f21dc11423465893fb1839dd6c9251c0",
     "pr1": "928ff8615c852f4178016ae8673d97d6c66bcb9e",
     "mixed_script": "78b9e909f5484ca7e5edda54841124a521b6e69a",
+    "candidate": "7271fdb6107950701f7c91119d63923f7a7f4f83",
 }
 
 

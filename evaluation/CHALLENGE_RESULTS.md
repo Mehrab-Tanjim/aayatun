@@ -27,4 +27,4 @@ See RELEVANCE_AUDIT.md for the subsequent pair-by-pair label audit and correctio
 
 The direct-answer scores exclude the 18 negative controls and one identity question with only contextual evidence (CH0206).
 
-For the separate 54-query difficult multiword diagnostic and its deploy, PR #1 and mixed-script leaderboard, see [DIFFICULT_MULTIWORD.md](DIFFICULT_MULTIWORD.md). These cases are excluded from the frozen challenger totals above.
+For the separate 79-query difficult multiword diagnostic and its deploy, PR #1, mixed-script and candidate leaderboard, see [DIFFICULT_MULTIWORD.md](DIFFICULT_MULTIWORD.md). These cases are excluded from the frozen challenger totals above.

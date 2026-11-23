@@ -1,0 +1,34 @@
+{"id":"SF01","language":"en","query":"How do I cope with a sudden personal loss?","expected":["2:156"],"reason":"The ayah describes the response of those struck by calamity."}
+{"id":"SF02","language":"en","query":"Is there any distance between me and God when I ask for help?","expected":["2:186"],"reason":"God says He is near and answers the one who calls on Him."}
+{"id":"SF03","language":"en","query":"Should I give something if I am going to humiliate the person afterward?","expected":["2:263","2:264"],"reason":"Kind words are better than harmful charity, and insults can invalidate it."}
+{"id":"SF04","language":"en","query":"Can I keep a donation private instead of telling everybody?","expected":["2:271"],"reason":"The verse prefers giving to the poor discreetly."}
+{"id":"SF05","language":"en","query":"What if I only donate things I do not care about?","expected":["3:92"],"reason":"The verse asks people to give from what they love."}
+{"id":"SF06","language":"en","query":"Does kindness extend to the people who live a bit farther away?","expected":["4:36"],"reason":"The verse includes both near and farther neighbors."}
+{"id":"SF07","language":"en","query":"What should I do with something someone left in my safekeeping?","expected":["4:58","2:283"],"reason":"Both ayat instruct people to honor what was entrusted to them."}
+{"id":"SF08","language":"en","query":"How can I get ready to pray if there is nothing to wash with?","expected":["5:6","4:43"],"reason":"Both ayat describe purification with clean earth when water is unavailable."}
+{"id":"SF09","language":"en","query":"Does God know even the tiniest hidden event out in nature?","expected":["6:59"],"reason":"The verse uses a falling leaf and a hidden grain as examples of divine knowledge."}
+{"id":"SF10","language":"en","query":"Why should I avoid mocking what another community holds sacred?","expected":["6:108"],"reason":"The verse forbids insulting other objects of worship to avoid provoking insults against God."}
+{"id":"SF11","language":"en","query":"Is overeating discouraged even when the food itself is permitted?","expected":["7:31"],"reason":"The verse permits eating and drinking and warns against excess."}
+{"id":"SF12","language":"en","query":"What if the side we are fighting offers a truce?","expected":["8:61"],"reason":"The verse instructs accepting a move toward peace."}
+{"id":"SF13","language":"en","query":"Can someone stuck far from home receive the obligatory donation?","expected":["9:60"],"reason":"The stranded traveler is among recipients of zakah."}
+{"id":"SF14","language":"en","query":"A group lowering a pail finds a child instead of water","expected":["12:19"],"reason":"A water drawer discovers Joseph when lowering his bucket."}
+{"id":"SF15","language":"en","query":"Guests at a meal accidentally wound themselves when a young man enters","expected":["12:31"],"reason":"The guests cut their hands when they see Joseph."}
+{"id":"SF16","language":"en","query":"What can settle my heart when I am anxious?","expected":["13:28"],"reason":"The verse connects remembrance of God with reassurance of the heart."}
+{"id":"SF17","language":"en","query":"Where is something good we say compared to a plant that stands firmly?","expected":["14:24"],"reason":"The verse compares a good word to a tree with a firmly fixed root."}
+{"id":"SF18","language":"en","query":"How should I promise to do something the next day?","expected":["18:23","18:24"],"reason":"The verses qualify statements about tomorrow with God's will."}
+{"id":"SF19","language":"en","query":"How should Moses address a ruler who is behaving like a tyrant?","expected":["20:43","20:44"],"reason":"Moses and Aaron are sent to Pharaoh and told to address him gently."}
+{"id":"SF20","language":"en","query":"Who asks for a worker because he is capable and can be trusted?","expected":["28:26"],"reason":"One of the women recommends hiring a strong and trustworthy worker."}
+{"id":"SF21","language":"en","query":"What is the example of a fragile dwelling built by a tiny creature?","expected":["29:41"],"reason":"The parable describes the spider's house as the frailest dwelling."}
+{"id":"SF22","language":"en","query":"How should I carry myself and control the volume of my voice?","expected":["31:18","31:19"],"reason":"The verses counsel humility, moderation in walking and lowering the voice."}
+{"id":"SF23","language":"en","query":"Should I pass along a report before I know if it is true?","expected":["49:6"],"reason":"The verse calls for verifying a report to avoid harming people out of ignorance."}
+{"id":"SF24","language":"en","query":"What if my customers get less than I demand for myself?","expected":["83:1","83:2","83:3"],"reason":"These verses condemn taking full measure while giving customers less."}
+{"id":"SF25","language":"ar","query":"كيف أتصرف إن عرض خصمي إنهاء القتال؟","expected":["8:61"],"reason":"The verse instructs accepting a move toward peace."}
+{"id":"SF26","language":"ar","query":"هل أنشر خبرا قبل التأكد من صحته؟","expected":["49:6"],"reason":"The verse calls for verifying a report before causing harm."}
+{"id":"SF27","language":"bn","query":"পানি না পেলে নামাজের আগে কীভাবে পবিত্র হব?","expected":["5:6","4:43"],"reason":"Both ayat allow purification with clean earth when water is unavailable."}
+{"id":"SF28","language":"bn","query":"চিন্তায় অস্থির হলে কীভাবে মন শান্ত করব?","expected":["13:28"],"reason":"The verse links remembrance of God with reassurance of the heart."}
+{"id":"SF29","language":"fr","query":"Puis-je aider quelqu’un discrètement sans annoncer mon don ?","expected":["2:271"],"reason":"The verse prefers giving to the poor discreetly."}
+{"id":"SF30","language":"fr","query":"Quel passage parle d’un enfant découvert en puisant de l’eau ?","expected":["12:19"],"reason":"A water drawer discovers Joseph in the well."}
+{"id":"SF31","language":"id","query":"Bagaimana bersikap saat musuh menawarkan gencatan senjata?","expected":["8:61"],"reason":"The verse instructs accepting a move toward peace."}
+{"id":"SF32","language":"id","query":"Apa yang harus saya ucapkan saat berjanji melakukan sesuatu besok?","expected":["18:23","18:24"],"reason":"The verses qualify statements about tomorrow with God's will."}
+{"id":"SF33","language":"es","query":"¿Qué pasaje condena dar a los clientes menos de lo que uno exige recibir?","expected":["83:1","83:2","83:3"],"reason":"These verses condemn taking full measure while giving customers less."}
+{"id":"SF34","language":"es","query":"¿Por qué evitar burlarme de lo que otros consideran sagrado?","expected":["6:108"],"reason":"The verse forbids insulting other objects of worship."}

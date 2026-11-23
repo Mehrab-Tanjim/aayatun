@@ -1,6 +1,6 @@
 # Aayatun challenger benchmark v2
 
-This benchmark contains 1,566 queries in 646 connected families. It combines 416 authored or retained diagnostic cases and 1,150 automatically constructed known-item lexical cases. The source corpus has 6,236 verses. The SQLite target is upstream PR revision d39f74c. The manifest records fixture and English-corpus hashes.
+This benchmark contains 1,566 queries in 646 connected families. It combines 416 authored or retained diagnostic cases and 1,150 automatically constructed known-item lexical cases. The source corpus has 6,236 verses. The SQLite target is upstream PR revision 928ff86. The manifest records fixture and English-corpus hashes.
 
 | Primary intent | Queries |
 |---|---:|
@@ -38,7 +38,7 @@ From the workspace root run with the existing app Python environment.
     python aayatun-benchmark/evaluation/validate_challenge.py
     python aayatun-benchmark/evaluation/compare_challenge.py --repo aayatun-research
 
-The comparison requires the existing loopback OpenSearch test cluster and aayatun-eval-normalized index. It loads searchtool.py from trusted Git revision d39f74c, including normal app formatting and fallback paths. The phrase configuration adds a native phrase query with weight 3 to the same baseline query, fields and index. The weight was fixed before looking at this fixture's scores. Explicit outer quotes are removed in both OpenSearch modes so the phrase option is the changed variable.
+The comparison requires the existing loopback OpenSearch test cluster and aayatun-eval-normalized index. It loads searchtool.py from trusted Git revision 928ff86, including normal app formatting and fallback paths. The phrase configuration adds a native phrase query with weight 3 to the same baseline query, fields and index. The weight was fixed before looking at this fixture's scores. Explicit outer quotes are removed in both OpenSearch modes so the phrase option is the changed variable.
 
 There are 428 public diagnostic cases, 886 development cases and 252 frozen public test cases. Connected families, parallel questions, duplicate queries and shared labeled verses stay in one split. The public test set is visible and was frozen before this comparison. It should not be called a private holdout, and future tuning should use development data. Connected components do not guarantee that all related theological topics have been isolated.
 

@@ -61,8 +61,8 @@ def main():
         os.chdir(repo)
         sys.path.insert(0,str(repo))
         engine=types.ModuleType("pinned_search")
-        source=subprocess.check_output(["git","show","d39f74c:searchtool.py"]).decode("utf8")
-        exec(compile(source,"d39f74c:searchtool.py","exec"),engine.__dict__)
+        source=subprocess.check_output(["git","show","928ff86:searchtool.py"]).decode("utf8")
+        exec(compile(source,"928ff86:searchtool.py","exec"),engine.__dict__)
         engine._load_vocab()
         engine._load_bk_tree()
         for i,c in enumerate(cases):
@@ -97,7 +97,7 @@ def main():
             estimates.append(sum(v for v,n in sampled)/sum(n for v,n in sampled))
         estimates.sort()
         intervals[label]={"families":len(stats),"delta":sum(v for v,n in stats)/sum(n for v,n in stats),"bootstrap_95_percent":[estimates[49],estimates[1949]]}
-    report={"sqlite_revision":"d39f74c","dataset_sha256":manifest["query_sha256"],
+    report={"sqlite_revision":"928ff86","dataset_sha256":manifest["query_sha256"],
             "phrase_boost":3,"metrics":summary,"phrase_vs_lexical_hit5":intervals,
             "runs":[{"id":c["id"],"runs":runs[c["id"]]} for c in cases]}
     (HERE/"challenge_results.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf8")

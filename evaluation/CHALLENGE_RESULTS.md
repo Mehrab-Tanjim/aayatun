@@ -1,6 +1,6 @@
 # Challenger v2 comparison results
 
-Anchor Hit@5 is the fraction of answerable questions with a supplied grade-2 reference in the first five. All engines used the same frozen questions and scopes. SQLite is pinned to the upstream PR revision d39f74c. OpenSearch 3.10.0 used the same existing normalized index in both runs. English and Arabic source text were verified equal for all 6,236 IDs.
+Anchor Hit@5 is the fraction of answerable questions with a supplied grade-2 reference in the first five. All engines used the same frozen questions and scopes. SQLite is pinned to the upstream PR revision 928ff86. OpenSearch 3.10.0 used the same existing normalized index in both runs. English and Arabic source text were verified equal for all 6,236 IDs.
 
 | Slice | Cases | SQLite PR | OpenSearch lexical | OpenSearch phrase boost |
 |---|---:|---:|---:|---:|

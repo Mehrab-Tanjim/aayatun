@@ -71,7 +71,7 @@ def main():
             if i%200==0:print("SQLite",i,flush=True)
     groups=defaultdict(list)
     for c in cases:
-        if c["judgments"]:
+        if 2 in c["judgments"].values():
             groups["all"].append(c)
             groups["intent="+c["intent"]].append(c)
             groups["provenance="+c["provenance"]].append(c)

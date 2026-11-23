@@ -72,7 +72,7 @@
     "frozen_public_test": 252,
     "dev": 886
   },
-  "query_sha256": "709d4dc493b9d487881cd80bf6d8e19a20fb0529585b2605530d661f2dd9df00",
+  "query_sha256": "f8977c50edfc2f672be1116342bdcc046c1317f1b44381a4ba550cd2bdebef8d",
   "corpus_english_sha256": "d1c40be0bef518288500f3940d4419b3516c2497b7285f5dcbd22802487e34e0",
   "limitations": [
     "Model-authored language review, without independent native-speaker review.",

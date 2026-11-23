@@ -16,7 +16,7 @@ This benchmark contains 1,566 queries in 646 connected families. It combines 416
 
 English, Arabic and Bengali have native-script examples. Each has at least 20 multi-keyword cases. There are seven mixed-script cases. Another 45 language varieties have two cross-language questions each, about debt relief and returning greetings. These include Spanish, French, Mandarin, Hindi, Urdu, Portuguese, Russian, Indonesian, German, Japanese, Punjabi, Marathi, Telugu, Turkish, Tamil, Vietnamese, Korean, Persian, Swahili, Hausa, Malay, Italian, Filipino, Gujarati, Kannada, Malayalam, Thai, Burmese, Polish, Ukrainian, Dutch, Uzbek, Pashto, Somali, Amharic, Yoruba, Javanese, Cantonese, Egyptian Arabic, Sundanese, Romanian, Odia, Igbo, Swedish and Nepali. The manifest contains the exact tags and counts. This is a broad language smoke test with shallow topic coverage in those additional languages. It does not establish comprehensive coverage of every major language.
 
-The model authored queries and proposed references using domain knowledge, then checked proposed passages against local English and Arabic Quran text. English, Arabic and Bengali keyword families include selected displayed Bengali tafsir checks. The evidence file records the underlying source passages. Evidence fragments are cues for audit. In CH0273, the cue “turn yellow” corresponds to “turned yellow” in 57:20.
+The model authored queries and proposed references using domain knowledge, then checked proposed passages against local English and Arabic Quran text. English, Arabic and Bengali keyword families include selected displayed Bengali tafsir checks. The evidence file records the underlying source passages. Evidence fragments are cues for audit. In CH0273, the evidence cue “turned yellow” matches the wording of 57:20.
 
 Questions cover narrative events, ethics, worship, family relations, spending, trade, nature imagery, direct wording, inflections, misspellings, and short underspecified searches. Ambiguous cases record representative interpretations in their rationales. Multi-verse cases retain all supplied anchors. The repeated refrain in Surah 55 now includes every identical English occurrence for its wording query.
 
@@ -57,3 +57,5 @@ challenge_v2.jsonl stores questions, scope, family, split, references, rationale
 Questions added here are original model-authored text or mechanically extracted known-item queries. Existing seeds are retained from this repository. No Daleel questions or external benchmark rows were imported. Source translation and Quran text retain their existing source attribution in the app repository. This benchmark does not grant additional rights to the underlying corpus.
 
 See RELEVANCE_AUDIT.md for the subsequent pair-by-pair label audit and corrections.
+
+Each labeled ref now has a verse-specific explanation under `verse_rationales`. See [the second relevance review](RELEVANCE_AUDIT.md) for scope, grade changes and limitations.

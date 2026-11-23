@@ -1,5 +1,5 @@
 """Apply the recorded model relevance review and mechanically verify source anchors."""
-import hashlib
+from pair_evidence import ADDITIONS, CONTEXT, NEGATIVES, explain
 import json
 from pathlib import Path
 import re
@@ -42,6 +42,11 @@ def apply(cases, corpus):
         if c["id"]=="CH0029":
             target=words(corpus["55:13"]["en"])
             c["judgments"]={r:2 for r,t in corpus.items() if words(t["en"])==target}
+        for ref in ADDITIONS.get(c["id"], []):
+            c["judgments"][ref] = 2
+        for ref in c["judgments"]:
+            if (c["id"], ref) in CONTEXT:
+                c["judgments"][ref] = 1
         for ref,reason in PARTIAL.get(c["id"],{}).items():
             c["judgments"][ref]=1
         if c["id"] in PASSAGES:
@@ -52,24 +57,23 @@ def apply(cases, corpus):
             "language_review":"native_speaker_review_pending",
             "notes":NOTES.get(c["id"],"")
         }
-        if c["provenance"]=="automatic_known_item":
-            if c["intent"]=="phrase":
-                phrase=c["query"].strip('"')
-                if not any(re.search(r"(?<![A-Za-z'])"+re.escape(phrase)+r"(?![A-Za-z'])",corpus[r]["en"],re.I) for r in c["judgments"]):
-                    c["relevance_review"]["notes"]="Extracted phrase has an apostrophe or punctuation boundary mismatch. Source anchor exists, but query naturalness needs review."
-                    c["relevance_review"]["status"]="query_quality_review"
-            for ref in c["judgments"]:
-                q=words(c["query"]); t=words(corpus[ref]["en"])
-                assert set(q)<=set(t),(c["id"],ref)
-                if c["intent"]=="phrase":
-                    assert any(t[i:i+len(q)]==q for i in range(len(t)-len(q)+1))
-        for ref,grade in c["judgments"].items():
-            audit.append({"query_id":c["id"],"verse":ref,"grade":grade,
-                          "method":c["relevance_review"]["method"],
+        c["verse_rationales"] = {}
+        if not c["judgments"]:
+            c["rationale"] = NEGATIVES.get(c["id"], c["rationale"])
+            c["relevance_review"]["status"] = "no_direct_answer"
+        for ref, grade in c["judgments"].items():
+            reason, evidence, embedded = explain(c, ref, corpus)
+            reason = PARTIAL.get(c["id"], {}).get(ref, reason)
+            if embedded:
+                c["relevance_review"]["notes"] = "The tokenizer splits a source word at an apostrophe."
+                c["relevance_review"]["status"] = "query_quality_review"
+            c["verse_rationales"][ref] = reason
+            audit.append({"query_id":c["id"], "query":c["query"], "scope":c["field"],
+                          "verse":ref, "grade":grade, "method":c["relevance_review"]["method"],
                           "decision":"contextual" if grade==1 else "supported_anchor",
-                          "reason":PARTIAL.get(c["id"],{}).get(ref,c["rationale"]),
+                          "reason":reason, "source_evidence":evidence,
                           "notes":c["relevance_review"]["notes"]})
-        for ref in c["judgments"]:
-            assert ref in corpus
+        if c["verse_rationales"]:
+            c["rationale"] = " ".join(f"{ref} — {reason}" for ref, reason in c["verse_rationales"].items())
     (HERE/"relevance_audit.jsonl").write_text("".join(json.dumps(a,ensure_ascii=False)+"\n" for a in audit),encoding="utf8")
     return audit

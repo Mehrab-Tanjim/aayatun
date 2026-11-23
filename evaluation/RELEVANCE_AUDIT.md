@@ -1,4 +1,15 @@
-# Rapid relevance audit
+# Verse-by-verse relevance verification
+
+The second review covers 1,777 labeled pairs. Each query now carries a rationale keyed by ayah. Each row in [the detailed audit](relevance_audit.jsonl) also includes the query, selected field, grade, and verbatim source evidence. Arabic and Bengali searches include supporting text from their own field. Generated lexical cases include the actual matched wording and distinguish apostrophe-split matches.
+
+Added eight confirmed anchors, including 79:16 for Tuwa and 2:83 for the Arabic wording about kindness to parents. Six further labels moved to contextual credit. For example, 17:23 instructs a person how to speak to aging parents, while 17:24 supplies a prayer for them. For the question asking which three people were left behind, 9:118 locates the story but does not give their names. That case is excluded from direct-answer scoring. The phrase in 2:71 begins after an opening quotation mark and is valid; the other five apostrophe-split extracts still need natural-query review.
+
+The final counts are 1,767 grade-2 retrieval anchors and 10 grade-1 contextual labels. A grade-2 anchor can be one explicitly requested part of a multi-verse answer. The passage sets identify questions requiring more than one part. The 1,253 extracted lexical pairs were mechanically checked, and 524 authored pairs have model-reviewed reasons. Additional relevant references may exist. Independent native-language assessment remains outstanding.
+
+Validate against the local production corpus with `python evaluation/validate_challenge.py --repo PATH_TO_APP`. The validator checks one-to-one coverage, scope, grade, and the presence of every evidence excerpt in the cited verse. See [updated scores](CHALLENGE_RESULTS.md).
+
+## First review (historical counts)
+
 
 Reviewed every supplied query–ayah label in challenger v2. The original fixture had 1,762 pairs. After adding missing equivalents, it has 1,769 pairs across 1,566 queries.
 

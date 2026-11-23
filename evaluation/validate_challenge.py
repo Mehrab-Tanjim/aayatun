@@ -1,5 +1,5 @@
 """Validate references, evidence, labels, duplicate queries and split isolation."""
-from collections import Counter
+import argparse
 import json
 from pathlib import Path
 import re
@@ -8,7 +8,7 @@ import sqlite3
 HERE=Path(__file__).resolve().parent
 
 
-def validate():
+def validate(repo=None):
     cases=[json.loads(l) for l in (HERE/"challenge_v2.jsonl").read_text(encoding="utf8").splitlines()]
     evidence=json.loads((HERE/"challenge_evidence.json").read_text(encoding="utf8"))
     seen=set()
@@ -35,8 +35,32 @@ def validate():
         if f and not any(f.casefold() in evidence[r]["english"].casefold() for r in c["judgments"]):
             errors.append((c["id"],c["query"],f))
     print("Evidence fragments requiring inspection:",errors)
+    assert not errors, errors
+    pairs={(c["id"], r):(c, grade) for c in cases for r,grade in c["judgments"].items()}
+    audit=[json.loads(line) for line in (HERE/"relevance_audit.jsonl").read_text(encoding="utf8").splitlines()]
+    assert len(audit)==len(pairs)
+    corpus={}
+    if repo:
+        uri=(repo.resolve()/"db/search.db").as_uri()+"?mode=ro"
+        with sqlite3.connect(uri,uri=True) as db:
+            corpus={f"{s}:{v}":{"translation":en,"ayah":ar,"bn_tafsir":bn}
+                    for s,v,en,ar,bn in db.execute("SELECT surah,verse,en,ar_orig,bn_tafsir FROM docs")}
+    for row in audit:
+        c,grade=pairs.pop((row["query_id"],row["verse"]))
+        assert row["grade"]==grade and row["reason"]==c["verse_rationales"][row["verse"]]
+        assert row["query"]==c["query"] and row["scope"]==c["field"]
+        assert c["field"]=="all" or set(row["source_evidence"])=={c["field"]}
+        assert row["source_evidence"] and row["reason"].strip()
+        for field,fragments in row["source_evidence"].items():
+            assert fragments and all(fragments)
+            if repo:
+                assert all(f in corpus[row["verse"]][field] for f in fragments), row["query_id"]
+    assert not pairs
+    print(f"Verified one rationale and scoped evidence record for each of {len(audit)} labels.")
     return cases
 
 
 if __name__=="__main__":
-    validate()
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--repo",type=Path)
+    validate(parser.parse_args().repo)

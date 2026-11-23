@@ -102,6 +102,9 @@ def main():
         else:dedup[key]=c
     cases=list(dedup.values())
     from audit_relevance import apply
+    for i, c in enumerate(cases, 1):
+        c["id"] = f"CH{i:04}"
+    apply(cases, corpus)
     # Union linked references and parallel variants, then keep each component in one split.
     parent={}
     def find(x):
@@ -118,7 +121,6 @@ def main():
         if c["family"] in public:c["split"]="public_diagnostic"
         elif c["split"]!="public_diagnostic":
             c["split"]="frozen_public_test" if int(hashlib.sha256(c["family"].encode()).hexdigest(),16)%5==0 else "dev"
-    apply(cases, corpus)
     for c in cases:
         for ref in c["judgments"]:
             evidence[ref]={"english":corpus[ref]["en"],"arabic":corpus[ref]["ar"]}

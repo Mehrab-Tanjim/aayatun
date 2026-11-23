@@ -1,0 +1,6 @@
+{
+  "opensearch": "3.10.0",
+  "corpus_rows": 6236,
+  "same_english_and_arabic_text": true,
+  "query_sha256": "f8977c50edfc2f672be1116342bdcc046c1317f1b44381a4ba550cd2bdebef8d"
+}

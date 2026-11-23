@@ -30,39 +30,45 @@ def rank(case, refs):
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--repo",type=Path,required=True)
+    p.add_argument("--saved-runs", action="store_true")
     args=p.parse_args()
     repo=args.repo.resolve()
     cases=[json.loads(l) for l in (HERE/"challenge_v2.jsonl").read_text(encoding="utf8").splitlines()]
     manifest=json.loads((HERE/"challenge_manifest.json").read_text())
     assert hashlib.sha256((HERE/"challenge_v2.jsonl").read_bytes()).hexdigest()==manifest["query_sha256"]
-    # Fixed phrase weight chosen before observing this benchmark.
-    runs={c["id"]:{} for c in cases}
-    for mode in ("os_lexical","os_phrase"):
-        for start in range(0,len(cases),100):
-            batch=cases[start:start+100]
-            lines=[]
-            for c in batch:
-                fields=FIELDS[c["field"]]
-                text=c["query"].strip('"')
-                base={"multi_match":{"query":text,"fields":fields}}
-                query=base if mode=="os_lexical" else {"bool":{"must":[base],"should":[{"multi_match":{"query":text,"fields":fields,"type":"phrase","boost":3}}]}}
-                lines.extend([json.dumps({"index":"aayatun-eval-normalized"}),json.dumps({"size":10,"_source":False,"query":query})])
-            response=call("/_msearch","\n".join(lines)+"\n","application/x-ndjson")
-            for c,result in zip(batch,response["responses"]):
-                if "error" in result:raise RuntimeError(result["error"])
-                runs[c["id"]][mode]=[h["_id"] for h in result["hits"]["hits"]]
-        print(mode,"complete",flush=True)
-    os.chdir(repo)
-    sys.path.insert(0,str(repo))
-    engine=types.ModuleType("pinned_search")
-    source=subprocess.check_output(["git","show","d39f74c:searchtool.py"]).decode("utf8")
-    exec(compile(source,"d39f74c:searchtool.py","exec"),engine.__dict__)
-    engine._load_vocab()
-    engine._load_bk_tree()
-    for i,c in enumerate(cases):
-        hits,_=engine.index_search(c["query"],10,field=c["field"])
-        runs[c["id"]]["sqlite_pr"]=[f"{h['surah']}:{h['verse']}" for h in hits]
-        if i%200==0:print("SQLite",i,flush=True)
+    if args.saved_runs:
+        previous=json.loads((HERE/"challenge_results.json").read_text(encoding="utf8"))
+        runs={r["id"]:r["runs"] for r in previous["runs"]}
+        assert set(runs)=={c["id"] for c in cases}
+    else:
+        # Fixed phrase weight chosen before observing this benchmark.
+        runs={c["id"]:{} for c in cases}
+        for mode in ("os_lexical","os_phrase"):
+            for start in range(0,len(cases),100):
+                batch=cases[start:start+100]
+                lines=[]
+                for c in batch:
+                    fields=FIELDS[c["field"]]
+                    text=c["query"].strip('"')
+                    base={"multi_match":{"query":text,"fields":fields}}
+                    query=base if mode=="os_lexical" else {"bool":{"must":[base],"should":[{"multi_match":{"query":text,"fields":fields,"type":"phrase","boost":3}}]}}
+                    lines.extend([json.dumps({"index":"aayatun-eval-normalized"}),json.dumps({"size":10,"_source":False,"query":query})])
+                response=call("/_msearch","\n".join(lines)+"\n","application/x-ndjson")
+                for c,result in zip(batch,response["responses"]):
+                    if "error" in result:raise RuntimeError(result["error"])
+                    runs[c["id"]][mode]=[h["_id"] for h in result["hits"]["hits"]]
+            print(mode,"complete",flush=True)
+        os.chdir(repo)
+        sys.path.insert(0,str(repo))
+        engine=types.ModuleType("pinned_search")
+        source=subprocess.check_output(["git","show","d39f74c:searchtool.py"]).decode("utf8")
+        exec(compile(source,"d39f74c:searchtool.py","exec"),engine.__dict__)
+        engine._load_vocab()
+        engine._load_bk_tree()
+        for i,c in enumerate(cases):
+            hits,_=engine.index_search(c["query"],10,field=c["field"])
+            runs[c["id"]]["sqlite_pr"]=[f"{h['surah']}:{h['verse']}" for h in hits]
+            if i%200==0:print("SQLite",i,flush=True)
     groups=defaultdict(list)
     for c in cases:
         if c["judgments"]:

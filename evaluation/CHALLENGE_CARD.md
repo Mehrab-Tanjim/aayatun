@@ -55,3 +55,5 @@ The extra 45 languages share only two scenarios. No statistically reliable per-l
 challenge_v2.jsonl stores questions, scope, family, split, references, rationales, origin and review status. challenge_evidence.json stores local English and Arabic source evidence for labeled verses. challenge_manifest.json records counts, hashes and limitations. CHALLENGE_PREVIEW.md offers a readable preview.
 
 Questions added here are original model-authored text or mechanically extracted known-item queries. Existing seeds are retained from this repository. No Daleel questions or external benchmark rows were imported. Source translation and Quran text retain their existing source attribution in the app repository. This benchmark does not grant additional rights to the underlying corpus.
+
+See RELEVANCE_AUDIT.md for the subsequent pair-by-pair label audit and corrections.

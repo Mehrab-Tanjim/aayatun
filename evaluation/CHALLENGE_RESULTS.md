@@ -22,3 +22,5 @@ The shuffled review pool contains 4841 candidate query–verse pairs from the au
 sqlite_pr returned results for 12/18 no-answer cases. This measures retrieval behavior, not whether an answer was asserted.
 os_lexical returned results for 10/18 no-answer cases. This measures retrieval behavior, not whether an answer was asserted.
 os_phrase returned results for 10/18 no-answer cases. This measures retrieval behavior, not whether an answer was asserted.
+
+See RELEVANCE_AUDIT.md for the subsequent pair-by-pair label audit and corrections.

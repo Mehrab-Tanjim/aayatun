@@ -101,6 +101,7 @@ def main():
             dedup[key]["judgments"].update(c["judgments"])
         else:dedup[key]=c
     cases=list(dedup.values())
+    from audit_relevance import apply
     # Union linked references and parallel variants, then keep each component in one split.
     parent={}
     def find(x):
@@ -117,6 +118,10 @@ def main():
         if c["family"] in public:c["split"]="public_diagnostic"
         elif c["split"]!="public_diagnostic":
             c["split"]="frozen_public_test" if int(hashlib.sha256(c["family"].encode()).hexdigest(),16)%5==0 else "dev"
+    apply(cases, corpus)
+    for c in cases:
+        for ref in c["judgments"]:
+            evidence[ref]={"english":corpus[ref]["en"],"arabic":corpus[ref]["ar"]}
     (HERE/"challenge_v2.jsonl").write_text("".join(json.dumps(c,ensure_ascii=False)+"\n" for c in cases),encoding="utf8")
     write_json(HERE/"challenge_evidence.json",evidence)
     manifest={"queries":len(cases),"families":len({c["family"] for c in cases}),

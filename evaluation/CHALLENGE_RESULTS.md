@@ -26,3 +26,5 @@ os_phrase returned results for 10/18 no-answer cases. This measures retrieval be
 See RELEVANCE_AUDIT.md for the subsequent pair-by-pair label audit and corrections.
 
 The direct-answer scores exclude the 18 negative controls and one identity question with only contextual evidence (CH0206).
+
+For the separate 54-query difficult multiword diagnostic and its deploy, PR #1 and mixed-script leaderboard, see [DIFFICULT_MULTIWORD.md](DIFFICULT_MULTIWORD.md). These cases are excluded from the frozen challenger totals above.

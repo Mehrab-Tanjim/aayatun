@@ -1,0 +1,5202 @@
+{
+  "fixture": "difficult_multiword.jsonl",
+  "fixture_sha256": "8c5b20dc851e52a2151d3fc427c595ded21a97e53e54862b46d4c0335d85891e",
+  "fixture_cases": 79,
+  "answerable_cases": 79,
+  "commentary_validation": null,
+  "field_override": "all",
+  "success_definition": "At least one expected relevant ayah appears in the first five results.",
+  "revisions": {
+    "deploy": "d9cff5d3f21dc11423465893fb1839dd6c9251c0",
+    "pr1": "bc755b9d2808f8da743494e5a7f516c3f0fcc6e2",
+    "fcs": "54990b849f176d722fb087372c8875cb2d7c6e14"
+  },
+  "searchnorm_blob_hashes": {
+    "deploy": "b106e0ff964e4fb5bdf5ed6f3a3543e8df472df2",
+    "pr1": "b106e0ff964e4fb5bdf5ed6f3a3543e8df472df2",
+    "fcs": "b106e0ff964e4fb5bdf5ed6f3a3543e8df472df2"
+  },
+  "index": {
+    "path": "D:\\Personal Projects\\Personal Projects\\Search Engine\\aayatun-research\\db\\search.db",
+    "size_bytes": 169738240,
+    "docs": 6236,
+    "english_stem": true,
+    "docs_trgm": true,
+    "sqlite_version": "3.49.1"
+  },
+  "metrics": {
+    "deploy": {
+      "all": {
+        "n": 79,
+        "successful_at_1": 27,
+        "successful_at_5": 42,
+        "hit_at_5": 0.5316455696202531,
+        "mrr_at_10": 0.42578862768736186,
+        "p50_ms": 66.282,
+        "p95_ms": 96.156
+      },
+      "field=all": {
+        "n": 79,
+        "successful_at_1": 27,
+        "successful_at_5": 42,
+        "hit_at_5": 0.5316455696202531,
+        "mrr_at_10": 0.42578862768736186,
+        "p50_ms": 66.282,
+        "p95_ms": 96.156
+      },
+      "kind=distant terms": {
+        "n": 14,
+        "successful_at_1": 12,
+        "successful_at_5": 14,
+        "hit_at_5": 1.0,
+        "mrr_at_10": 0.9285714285714286,
+        "p50_ms": 70.936,
+        "p95_ms": 99.536
+      },
+      "kind=surah and Arabic prefix": {
+        "n": 31,
+        "successful_at_1": 2,
+        "successful_at_5": 5,
+        "hit_at_5": 0.16129032258064516,
+        "mrr_at_10": 0.09731182795698924,
+        "p50_ms": 49.462,
+        "p95_ms": 96.504
+      },
+      "surah_arabic": {
+        "n": 33,
+        "successful_at_1": 2,
+        "successful_at_5": 5,
+        "hit_at_5": 0.15151515151515152,
+        "mrr_at_10": 0.09478114478114479,
+        "p50_ms": 50.124,
+        "p95_ms": 96.504
+      },
+      "kind=paraphrase": {
+        "n": 30,
+        "successful_at_1": 12,
+        "successful_at_5": 22,
+        "hit_at_5": 0.7333333333333333,
+        "mrr_at_10": 0.5503174603174603,
+        "p50_ms": 71.802,
+        "p95_ms": 93.105
+      },
+      "kind=paraphrase and implied name": {
+        "n": 2,
+        "successful_at_1": 1,
+        "successful_at_5": 1,
+        "hit_at_5": 0.5,
+        "mrr_at_10": 0.5,
+        "p50_ms": 50.567,
+        "p95_ms": 63.523
+      },
+      "kind=surah and Arabic morphology": {
+        "n": 1,
+        "successful_at_1": 0,
+        "successful_at_5": 0,
+        "hit_at_5": 0.0,
+        "mrr_at_10": 0.1111111111111111,
+        "p50_ms": 52.122,
+        "p95_ms": 52.122
+      },
+      "kind=surah Arabic and English": {
+        "n": 1,
+        "successful_at_1": 0,
+        "successful_at_5": 0,
+        "hit_at_5": 0.0,
+        "mrr_at_10": 0.0,
+        "p50_ms": 96.156,
+        "p95_ms": 96.156
+      },
+      "provenance=mechanically selected unique prefix in surah": {
+        "n": 25,
+        "successful_at_1": 0,
+        "successful_at_5": 3,
+        "hit_at_5": 0.12,
+        "mrr_at_10": 0.04066666666666666,
+        "p50_ms": 47.834,
+        "p95_ms": 96.504
+      }
+    },
+    "pr1": {
+      "all": {
+        "n": 79,
+        "successful_at_1": 52,
+        "successful_at_5": 64,
+        "hit_at_5": 0.810126582278481,
+        "mrr_at_10": 0.7293751255776573,
+        "p50_ms": 77.586,
+        "p95_ms": 217.011
+      },
+      "field=all": {
+        "n": 79,
+        "successful_at_1": 52,
+        "successful_at_5": 64,
+        "hit_at_5": 0.810126582278481,
+        "mrr_at_10": 0.7293751255776573,
+        "p50_ms": 77.586,
+        "p95_ms": 217.011
+      },
+      "kind=distant terms": {
+        "n": 14,
+        "successful_at_1": 12,
+        "successful_at_5": 14,
+        "hit_at_5": 1.0,
+        "mrr_at_10": 0.9285714285714286,
+        "p50_ms": 74.153,
+        "p95_ms": 118.58
+      },
+      "kind=surah and Arabic prefix": {
+        "n": 31,
+        "successful_at_1": 27,
+        "successful_at_5": 27,
+        "hit_at_5": 0.8709677419354839,
+        "mrr_at_10": 0.8709677419354839,
+        "p50_ms": 183.853,
+        "p95_ms": 231.453
+      },
+      "surah_arabic": {
+        "n": 33,
+        "successful_at_1": 27,
+        "successful_at_5": 27,
+        "hit_at_5": 0.8181818181818182,
+        "mrr_at_10": 0.8215488215488216,
+        "p50_ms": 181.576,
+        "p95_ms": 231.453
+      },
+      "kind=paraphrase": {
+        "n": 30,
+        "successful_at_1": 12,
+        "successful_at_5": 22,
+        "hit_at_5": 0.7333333333333333,
+        "mrr_at_10": 0.5503174603174603,
+        "p50_ms": 70.815,
+        "p95_ms": 86.52
+      },
+      "kind=paraphrase and implied name": {
+        "n": 2,
+        "successful_at_1": 1,
+        "successful_at_5": 1,
+        "hit_at_5": 0.5,
+        "mrr_at_10": 0.5,
+        "p50_ms": 50.524,
+        "p95_ms": 58.886
+      },
+      "kind=surah and Arabic morphology": {
+        "n": 1,
+        "successful_at_1": 0,
+        "successful_at_5": 0,
+        "hit_at_5": 0.0,
+        "mrr_at_10": 0.1111111111111111,
+        "p50_ms": 55.931,
+        "p95_ms": 55.931
+      },
+      "kind=surah Arabic and English": {
+        "n": 1,
+        "successful_at_1": 0,
+        "successful_at_5": 0,
+        "hit_at_5": 0.0,
+        "mrr_at_10": 0.0,
+        "p50_ms": 92.33,
+        "p95_ms": 92.33
+      },
+      "provenance=mechanically selected unique prefix in surah": {
+        "n": 25,
+        "successful_at_1": 22,
+        "successful_at_5": 22,
+        "hit_at_5": 0.88,
+        "mrr_at_10": 0.88,
+        "p50_ms": 189.897,
+        "p95_ms": 231.453
+      }
+    },
+    "fcs": {
+      "all": {
+        "n": 79,
+        "successful_at_1": 50,
+        "successful_at_5": 68,
+        "hit_at_5": 0.8607594936708861,
+        "mrr_at_10": 0.7322081575246132,
+        "p50_ms": 57.707,
+        "p95_ms": 99.04
+      },
+      "field=all": {
+        "n": 79,
+        "successful_at_1": 50,
+        "successful_at_5": 68,
+        "hit_at_5": 0.8607594936708861,
+        "mrr_at_10": 0.7322081575246132,
+        "p50_ms": 57.707,
+        "p95_ms": 99.04
+      },
+      "kind=distant terms": {
+        "n": 14,
+        "successful_at_1": 13,
+        "successful_at_5": 14,
+        "hit_at_5": 1.0,
+        "mrr_at_10": 0.9642857142857143,
+        "p50_ms": 70.087,
+        "p95_ms": 98.314
+      },
+      "kind=surah and Arabic prefix": {
+        "n": 31,
+        "successful_at_1": 27,
+        "successful_at_5": 27,
+        "hit_at_5": 0.8709677419354839,
+        "mrr_at_10": 0.8709677419354839,
+        "p50_ms": 28.923,
+        "p95_ms": 75.899
+      },
+      "surah_arabic": {
+        "n": 33,
+        "successful_at_1": 27,
+        "successful_at_5": 27,
+        "hit_at_5": 0.8181818181818182,
+        "mrr_at_10": 0.8215488215488216,
+        "p50_ms": 28.923,
+        "p95_ms": 75.899
+      },
+      "kind=paraphrase": {
+        "n": 30,
+        "successful_at_1": 9,
+        "successful_at_5": 26,
+        "hit_at_5": 0.8666666666666667,
+        "mrr_at_10": 0.5411111111111111,
+        "p50_ms": 72.161,
+        "p95_ms": 101.653
+      },
+      "kind=paraphrase and implied name": {
+        "n": 2,
+        "successful_at_1": 1,
+        "successful_at_5": 1,
+        "hit_at_5": 0.5,
+        "mrr_at_10": 0.5,
+        "p50_ms": 49.972,
+        "p95_ms": 50.3
+      },
+      "kind=surah and Arabic morphology": {
+        "n": 1,
+        "successful_at_1": 0,
+        "successful_at_5": 0,
+        "hit_at_5": 0.0,
+        "mrr_at_10": 0.1111111111111111,
+        "p50_ms": 26.293,
+        "p95_ms": 26.293
+      },
+      "kind=surah Arabic and English": {
+        "n": 1,
+        "successful_at_1": 0,
+        "successful_at_5": 0,
+        "hit_at_5": 0.0,
+        "mrr_at_10": 0.0,
+        "p50_ms": 45.56,
+        "p95_ms": 45.56
+      },
+      "provenance=mechanically selected unique prefix in surah": {
+        "n": 25,
+        "successful_at_1": 22,
+        "successful_at_5": 22,
+        "hit_at_5": 0.88,
+        "mrr_at_10": 0.88,
+        "p50_ms": 27.478,
+        "p95_ms": 75.899
+      }
+    }
+  },
+  "comparisons": {
+    "fcs_vs_deploy": {
+      "groups": {
+        "all": {
+          "n": 79,
+          "baseline_successful_at_5": 42,
+          "candidate_successful_at_5": 68,
+          "gained": 26,
+          "lost": 0,
+          "net": 26,
+          "retained": 42,
+          "neither": 11,
+          "rank_regressions": 6,
+          "top_five_losses": 0
+        },
+        "field=all": {
+          "n": 79,
+          "baseline_successful_at_5": 42,
+          "candidate_successful_at_5": 68,
+          "gained": 26,
+          "lost": 0,
+          "net": 26,
+          "retained": 42,
+          "neither": 11,
+          "rank_regressions": 6,
+          "top_five_losses": 0
+        },
+        "kind=distant terms": {
+          "n": 14,
+          "baseline_successful_at_5": 14,
+          "candidate_successful_at_5": 14,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 14,
+          "neither": 0,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "kind=surah and Arabic prefix": {
+          "n": 31,
+          "baseline_successful_at_5": 5,
+          "candidate_successful_at_5": 27,
+          "gained": 22,
+          "lost": 0,
+          "net": 22,
+          "retained": 5,
+          "neither": 4,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "surah_arabic": {
+          "n": 33,
+          "baseline_successful_at_5": 5,
+          "candidate_successful_at_5": 27,
+          "gained": 22,
+          "lost": 0,
+          "net": 22,
+          "retained": 5,
+          "neither": 6,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "kind=paraphrase": {
+          "n": 30,
+          "baseline_successful_at_5": 22,
+          "candidate_successful_at_5": 26,
+          "gained": 4,
+          "lost": 0,
+          "net": 4,
+          "retained": 22,
+          "neither": 4,
+          "rank_regressions": 6,
+          "top_five_losses": 0
+        },
+        "kind=paraphrase and implied name": {
+          "n": 2,
+          "baseline_successful_at_5": 1,
+          "candidate_successful_at_5": 1,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 1,
+          "neither": 1,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "kind=surah and Arabic morphology": {
+          "n": 1,
+          "baseline_successful_at_5": 0,
+          "candidate_successful_at_5": 0,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 0,
+          "neither": 1,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "kind=surah Arabic and English": {
+          "n": 1,
+          "baseline_successful_at_5": 0,
+          "candidate_successful_at_5": 0,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 0,
+          "neither": 1,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "provenance=mechanically selected unique prefix in surah": {
+          "n": 25,
+          "baseline_successful_at_5": 3,
+          "candidate_successful_at_5": 22,
+          "gained": 19,
+          "lost": 0,
+          "net": 19,
+          "retained": 3,
+          "neither": 3,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        }
+      },
+      "gained_cases": [
+        {
+          "id": "DM11",
+          "query": "luqman حمل",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM12",
+          "query": "luqman حملت",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM17",
+          "query": "kind leader forgive advice trust",
+          "field": "all",
+          "baseline_rank": 7,
+          "candidate_rank": 2,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM19",
+          "query": "save one life entire humanity israel",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM24",
+          "query": "god never sleeps throne sky knowledge",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 2,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM31",
+          "query": "hatred enemies fair judgment righteousness",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 5,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM51",
+          "query": "nur زيتون",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM55",
+          "query": "baqarah يحيط",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM56",
+          "query": "baqarah تداي",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM57",
+          "query": "imran واعت",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM58",
+          "query": "nisa كونو",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM62",
+          "query": "hud مجري",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM63",
+          "query": "yusuf بقمي",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM64",
+          "query": "nahl واوح",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM65",
+          "query": "kahf مداد",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM67",
+          "query": "ta ha يفقه",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM68",
+          "query": "anbiya مغضب",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM70",
+          "query": "furqan انفق",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM71",
+          "query": "naml مسكن",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM72",
+          "query": "qasas واوح",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM73",
+          "query": "luqman ووصي",
+          "field": "all",
+          "baseline_rank": 10,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM74",
+          "query": "sin يسبح",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM76",
+          "query": "hujurat اجتن",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM77",
+          "query": "rahman يبغي",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM78",
+          "query": "hadid وزين",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM79",
+          "query": "mulk طباق",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        }
+      ],
+      "lost_cases": [],
+      "rank_regressions": [
+        {
+          "id": "DM20",
+          "query": "mother pregnancy hardship thank parents return",
+          "field": "all",
+          "baseline_rank": 1,
+          "candidate_rank": 2,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM22",
+          "query": "burden beyond strength mistakes forgiveness",
+          "field": "all",
+          "baseline_rank": 1,
+          "candidate_rank": 2,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM23",
+          "query": "hard times patient worship seek support",
+          "field": "all",
+          "baseline_rank": 1,
+          "candidate_rank": 2,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM30",
+          "query": "justice testify against family rich poor",
+          "field": "all",
+          "baseline_rank": 2,
+          "candidate_rank": 4,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM34",
+          "query": "father eyesight restored shirt family",
+          "field": "all",
+          "baseline_rank": 2,
+          "candidate_rank": 3,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM45",
+          "query": "enemy becomes friend respond evil kindness",
+          "field": "all",
+          "baseline_rank": 1,
+          "candidate_rank": 5,
+          "baseline_success": true,
+          "candidate_success": true
+        }
+      ],
+      "top_five_losses": []
+    },
+    "fcs_vs_pr1": {
+      "groups": {
+        "all": {
+          "n": 79,
+          "baseline_successful_at_5": 64,
+          "candidate_successful_at_5": 68,
+          "gained": 4,
+          "lost": 0,
+          "net": 4,
+          "retained": 64,
+          "neither": 11,
+          "rank_regressions": 6,
+          "top_five_losses": 0
+        },
+        "field=all": {
+          "n": 79,
+          "baseline_successful_at_5": 64,
+          "candidate_successful_at_5": 68,
+          "gained": 4,
+          "lost": 0,
+          "net": 4,
+          "retained": 64,
+          "neither": 11,
+          "rank_regressions": 6,
+          "top_five_losses": 0
+        },
+        "kind=distant terms": {
+          "n": 14,
+          "baseline_successful_at_5": 14,
+          "candidate_successful_at_5": 14,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 14,
+          "neither": 0,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "kind=surah and Arabic prefix": {
+          "n": 31,
+          "baseline_successful_at_5": 27,
+          "candidate_successful_at_5": 27,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 27,
+          "neither": 4,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "surah_arabic": {
+          "n": 33,
+          "baseline_successful_at_5": 27,
+          "candidate_successful_at_5": 27,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 27,
+          "neither": 6,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "kind=paraphrase": {
+          "n": 30,
+          "baseline_successful_at_5": 22,
+          "candidate_successful_at_5": 26,
+          "gained": 4,
+          "lost": 0,
+          "net": 4,
+          "retained": 22,
+          "neither": 4,
+          "rank_regressions": 6,
+          "top_five_losses": 0
+        },
+        "kind=paraphrase and implied name": {
+          "n": 2,
+          "baseline_successful_at_5": 1,
+          "candidate_successful_at_5": 1,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 1,
+          "neither": 1,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "kind=surah and Arabic morphology": {
+          "n": 1,
+          "baseline_successful_at_5": 0,
+          "candidate_successful_at_5": 0,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 0,
+          "neither": 1,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "kind=surah Arabic and English": {
+          "n": 1,
+          "baseline_successful_at_5": 0,
+          "candidate_successful_at_5": 0,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 0,
+          "neither": 1,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        },
+        "provenance=mechanically selected unique prefix in surah": {
+          "n": 25,
+          "baseline_successful_at_5": 22,
+          "candidate_successful_at_5": 22,
+          "gained": 0,
+          "lost": 0,
+          "net": 0,
+          "retained": 22,
+          "neither": 3,
+          "rank_regressions": 0,
+          "top_five_losses": 0
+        }
+      },
+      "gained_cases": [
+        {
+          "id": "DM17",
+          "query": "kind leader forgive advice trust",
+          "field": "all",
+          "baseline_rank": 7,
+          "candidate_rank": 2,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM19",
+          "query": "save one life entire humanity israel",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 1,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM24",
+          "query": "god never sleeps throne sky knowledge",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 2,
+          "baseline_success": false,
+          "candidate_success": true
+        },
+        {
+          "id": "DM31",
+          "query": "hatred enemies fair judgment righteousness",
+          "field": "all",
+          "baseline_rank": 0,
+          "candidate_rank": 5,
+          "baseline_success": false,
+          "candidate_success": true
+        }
+      ],
+      "lost_cases": [],
+      "rank_regressions": [
+        {
+          "id": "DM20",
+          "query": "mother pregnancy hardship thank parents return",
+          "field": "all",
+          "baseline_rank": 1,
+          "candidate_rank": 2,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM22",
+          "query": "burden beyond strength mistakes forgiveness",
+          "field": "all",
+          "baseline_rank": 1,
+          "candidate_rank": 2,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM23",
+          "query": "hard times patient worship seek support",
+          "field": "all",
+          "baseline_rank": 1,
+          "candidate_rank": 2,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM30",
+          "query": "justice testify against family rich poor",
+          "field": "all",
+          "baseline_rank": 2,
+          "candidate_rank": 4,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM34",
+          "query": "father eyesight restored shirt family",
+          "field": "all",
+          "baseline_rank": 2,
+          "candidate_rank": 3,
+          "baseline_success": true,
+          "candidate_success": true
+        },
+        {
+          "id": "DM45",
+          "query": "enemy becomes friend respond evil kindness",
+          "field": "all",
+          "baseline_rank": 1,
+          "candidate_rank": 5,
+          "baseline_success": true,
+          "candidate_success": true
+        }
+      ],
+      "top_five_losses": []
+    }
+  },
+  "runs": [
+    {
+      "id": "DM01",
+      "query": "debt witnesses transaction disobedience",
+      "field": "all",
+      "expected": [
+        "2:282"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "2:282",
+            "2:281",
+            "40:51",
+            "2:283",
+            "24:13",
+            "24:6",
+            "61:10",
+            "58:9",
+            "52:40",
+            "24:4"
+          ],
+          "ms": 66.729
+        },
+        "pr1": {
+          "results": [
+            "2:282",
+            "2:281",
+            "40:51",
+            "2:283",
+            "24:13",
+            "24:6",
+            "61:10",
+            "58:9",
+            "52:40",
+            "24:4"
+          ],
+          "ms": 81.034
+        },
+        "fcs": {
+          "results": [
+            "2:282",
+            "2:281",
+            "40:51",
+            "2:283",
+            "24:13",
+            "24:6",
+            "61:10",
+            "58:9",
+            "52:40",
+            "24:4"
+          ],
+          "ms": 62.034
+        }
+      }
+    },
+    {
+      "id": "DM02",
+      "query": "scribe guardian women evidence",
+      "field": "all",
+      "expected": [
+        "2:282"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "2:282",
+            "4:3",
+            "2:283",
+            "4:127",
+            "4:6",
+            "4:15",
+            "2:232",
+            "4:98",
+            "4:22",
+            "4:24"
+          ],
+          "ms": 118.58
+        },
+        "fcs": {
+          "results": [
+            "2:282",
+            "4:3",
+            "2:283",
+            "4:127",
+            "4:6",
+            "4:15",
+            "2:232",
+            "4:98",
+            "4:22",
+            "4:24"
+          ],
+          "ms": 98.314
+        },
+        "deploy": {
+          "results": [
+            "2:282",
+            "4:3",
+            "2:283",
+            "4:127",
+            "4:6",
+            "4:15",
+            "2:232",
+            "4:98",
+            "4:22",
+            "4:24"
+          ],
+          "ms": 99.536
+        }
+      }
+    },
+    {
+      "id": "DM03",
+      "query": "township hundred food donkey flesh",
+      "field": "all",
+      "expected": [
+        "2:259"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "2:259",
+            "62:5",
+            "88:6",
+            "8:65",
+            "2:258",
+            "18:25",
+            "16:115",
+            "5:3",
+            "44:44",
+            "49:12"
+          ],
+          "ms": 57.707
+        },
+        "deploy": {
+          "results": [
+            "2:259",
+            "62:5",
+            "88:6",
+            "8:65",
+            "2:258",
+            "18:25",
+            "16:115",
+            "5:3",
+            "44:44",
+            "49:12"
+          ],
+          "ms": 90.556
+        },
+        "pr1": {
+          "results": [
+            "2:259",
+            "62:5",
+            "88:6",
+            "8:65",
+            "2:258",
+            "18:25",
+            "16:115",
+            "5:3",
+            "44:44",
+            "49:12"
+          ],
+          "ms": 93.343
+        }
+      }
+    },
+    {
+      "id": "DM04",
+      "query": "mothers clothing capacity weaning consultation",
+      "field": "all",
+      "expected": [
+        "2:233"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "2:233",
+            "2:232",
+            "42:38",
+            "58:12",
+            "58:13",
+            "31:14",
+            "46:15",
+            "23:62",
+            "65:5",
+            "16:78"
+          ],
+          "ms": 70.936
+        },
+        "pr1": {
+          "results": [
+            "2:233",
+            "2:232",
+            "42:38",
+            "58:12",
+            "58:13",
+            "31:14",
+            "46:15",
+            "23:62",
+            "65:5",
+            "16:78"
+          ],
+          "ms": 68.665
+        },
+        "fcs": {
+          "results": [
+            "2:233",
+            "2:232",
+            "42:38",
+            "58:12",
+            "58:13",
+            "31:14",
+            "46:15",
+            "23:62",
+            "65:5",
+            "16:78"
+          ],
+          "ms": 61.316
+        }
+      }
+    },
+    {
+      "id": "DM05",
+      "query": "niche glass olive fire guides",
+      "field": "all",
+      "expected": [
+        "24:35"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "24:35",
+            "24:34",
+            "95:1",
+            "76:15",
+            "74:31",
+            "27:44",
+            "17:97",
+            "80:29",
+            "22:16",
+            "10:35"
+          ],
+          "ms": 64.068
+        },
+        "fcs": {
+          "results": [
+            "24:35",
+            "24:34",
+            "95:1",
+            "76:15",
+            "74:31",
+            "27:44",
+            "17:97",
+            "80:29",
+            "22:16",
+            "10:35"
+          ],
+          "ms": 70.087
+        },
+        "deploy": {
+          "results": [
+            "24:35",
+            "24:34",
+            "95:1",
+            "76:15",
+            "74:31",
+            "27:44",
+            "17:97",
+            "80:29",
+            "22:16",
+            "10:35"
+          ],
+          "ms": 57.263
+        }
+      }
+    },
+    {
+      "id": "DM06",
+      "query": "mercy harsh forgiveness consult rely",
+      "field": "all",
+      "expected": [
+        "3:159"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "3:159",
+            "3:158",
+            "24:20",
+            "57:27",
+            "24:21",
+            "3:157",
+            "4:110",
+            "58:12",
+            "4:96",
+            "1:3"
+          ],
+          "ms": 78.786
+        },
+        "deploy": {
+          "results": [
+            "3:159",
+            "3:158",
+            "24:20",
+            "57:27",
+            "24:21",
+            "3:157",
+            "4:110",
+            "58:12",
+            "4:96",
+            "1:3"
+          ],
+          "ms": 70.825
+        },
+        "pr1": {
+          "results": [
+            "3:159",
+            "3:158",
+            "24:20",
+            "57:27",
+            "24:21",
+            "3:157",
+            "4:110",
+            "58:12",
+            "4:96",
+            "1:3"
+          ],
+          "ms": 75.977
+        }
+      }
+    },
+    {
+      "id": "DM07",
+      "query": "assumption spy backbite flesh repentance",
+      "field": "all",
+      "expected": [
+        "49:12"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "49:12",
+            "4:16",
+            "4:17",
+            "2:160",
+            "9:104",
+            "2:54",
+            "49:11",
+            "19:60",
+            "39:54",
+            "9:126"
+          ],
+          "ms": 78.135
+        },
+        "pr1": {
+          "results": [
+            "49:12",
+            "4:16",
+            "4:17",
+            "2:160",
+            "9:104",
+            "2:54",
+            "49:11",
+            "19:60",
+            "39:54",
+            "9:126"
+          ],
+          "ms": 72.391
+        },
+        "fcs": {
+          "results": [
+            "49:12",
+            "4:16",
+            "4:17",
+            "2:160",
+            "9:104",
+            "49:11",
+            "2:54",
+            "19:60",
+            "39:54",
+            "9:126"
+          ],
+          "ms": 78.276
+        }
+      }
+    },
+    {
+      "id": "DM08",
+      "query": "israel corruption mankind saves messengers",
+      "field": "all",
+      "expected": [
+        "5:32"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "5:32",
+            "17:4",
+            "114:5",
+            "20:47",
+            "114:2",
+            "114:1",
+            "5:70",
+            "2:87",
+            "5:12",
+            "114:3"
+          ],
+          "ms": 66.205
+        },
+        "fcs": {
+          "results": [
+            "5:32",
+            "17:4",
+            "114:5",
+            "20:47",
+            "114:2",
+            "114:1",
+            "5:70",
+            "2:87",
+            "5:12",
+            "114:3"
+          ],
+          "ms": 75.486
+        },
+        "deploy": {
+          "results": [
+            "5:32",
+            "17:4",
+            "114:5",
+            "20:47",
+            "114:2",
+            "114:1",
+            "5:70",
+            "2:87",
+            "5:12",
+            "114:3"
+          ],
+          "ms": 72.535
+        }
+      }
+    },
+    {
+      "id": "DM09",
+      "query": "parents mother weakness weaning grateful destination",
+      "field": "all",
+      "expected": [
+        "31:14"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "31:14",
+            "31:13",
+            "46:15",
+            "2:233",
+            "27:19",
+            "12:99",
+            "46:14",
+            "4:11",
+            "19:32",
+            "27:40"
+          ],
+          "ms": 70.752
+        },
+        "deploy": {
+          "results": [
+            "31:14",
+            "31:13",
+            "46:15",
+            "2:233",
+            "27:19",
+            "12:99",
+            "46:14",
+            "4:11",
+            "19:32",
+            "27:40"
+          ],
+          "ms": 92.962
+        },
+        "pr1": {
+          "results": [
+            "31:14",
+            "31:13",
+            "46:15",
+            "2:233",
+            "27:19",
+            "12:99",
+            "46:14",
+            "4:11",
+            "19:32",
+            "27:40"
+          ],
+          "ms": 87.944
+        }
+      }
+    },
+    {
+      "id": "DM10",
+      "query": "fish anger darkness deity wrongdoers",
+      "field": "all",
+      "expected": [
+        "21:87"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "21:87",
+            "68:48",
+            "37:142",
+            "7:163",
+            "18:61",
+            "18:63",
+            "6:122",
+            "37:144",
+            "3:162",
+            "21:86"
+          ],
+          "ms": 60.644
+        },
+        "pr1": {
+          "results": [
+            "21:87",
+            "68:48",
+            "37:142",
+            "7:163",
+            "18:61",
+            "18:63",
+            "6:122",
+            "37:144",
+            "3:162",
+            "21:86"
+          ],
+          "ms": 60.814
+        },
+        "fcs": {
+          "results": [
+            "21:87",
+            "68:48",
+            "37:142",
+            "7:163",
+            "18:61",
+            "18:63",
+            "6:122",
+            "37:144",
+            "3:162",
+            "21:86"
+          ],
+          "ms": 57.147
+        }
+      }
+    },
+    {
+      "id": "DM11",
+      "query": "luqman حمل",
+      "field": "all",
+      "expected": [
+        "31:14"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "31:14"
+          ],
+          "ms": 132.485
+        },
+        "fcs": {
+          "results": [
+            "31:14"
+          ],
+          "ms": 11.097
+        },
+        "deploy": {
+          "results": [
+            "31:13",
+            "31:12",
+            "31:16",
+            "12:72",
+            "31:11",
+            "20:111",
+            "22:2",
+            "24:54",
+            "65:6",
+            "31:19"
+          ],
+          "ms": 49.462
+        }
+      }
+    },
+    {
+      "id": "DM12",
+      "query": "luqman حملت",
+      "field": "all",
+      "expected": [
+        "31:14"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "31:14",
+            "31:13",
+            "31:12",
+            "31:16",
+            "6:146",
+            "7:189",
+            "31:11",
+            "31:19",
+            "31:17",
+            "31:18"
+          ],
+          "ms": 33.123
+        },
+        "deploy": {
+          "results": [
+            "31:13",
+            "31:12",
+            "31:16",
+            "6:146",
+            "7:189",
+            "31:11",
+            "31:19",
+            "31:17",
+            "31:18",
+            "31:10"
+          ],
+          "ms": 55.639
+        },
+        "pr1": {
+          "results": [
+            "31:14",
+            "31:13",
+            "31:12",
+            "31:16",
+            "6:146",
+            "7:189",
+            "31:11",
+            "31:19",
+            "31:17",
+            "31:18"
+          ],
+          "ms": 170.866
+        }
+      }
+    },
+    {
+      "id": "DM13",
+      "query": "loan witness paperwork fraud",
+      "field": "all",
+      "expected": [
+        "2:282"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "57:11",
+            "2:245",
+            "64:17",
+            "57:18",
+            "73:20",
+            "4:41",
+            "5:12",
+            "10:46",
+            "85:3",
+            "2:244"
+          ],
+          "ms": 61.155
+        },
+        "pr1": {
+          "results": [
+            "57:11",
+            "2:245",
+            "64:17",
+            "57:18",
+            "73:20",
+            "4:41",
+            "5:12",
+            "10:46",
+            "85:3",
+            "2:244"
+          ],
+          "ms": 60.296
+        },
+        "fcs": {
+          "results": [
+            "57:11",
+            "83:20",
+            "2:245",
+            "64:17",
+            "57:18",
+            "33:54",
+            "83:21",
+            "73:20",
+            "4:41",
+            "5:12"
+          ],
+          "ms": 50.718
+        }
+      }
+    },
+    {
+      "id": "DM14",
+      "query": "dead village century uneaten meal animal bones",
+      "field": "all",
+      "expected": [
+        "2:259"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "2:259",
+            "6:145",
+            "5:3",
+            "6:146",
+            "75:3",
+            "23:82",
+            "36:78",
+            "17:98",
+            "17:49",
+            "37:53"
+          ],
+          "ms": 75.016
+        },
+        "fcs": {
+          "results": [
+            "2:259",
+            "6:145",
+            "49:12",
+            "5:3",
+            "6:146",
+            "23:82",
+            "2:243",
+            "25:50",
+            "43:11",
+            "2:73"
+          ],
+          "ms": 54.145
+        },
+        "deploy": {
+          "results": [
+            "2:259",
+            "6:145",
+            "5:3",
+            "6:146",
+            "75:3",
+            "23:82",
+            "36:78",
+            "17:98",
+            "17:49",
+            "37:53"
+          ],
+          "ms": 70.715
+        }
+      }
+    },
+    {
+      "id": "DM15",
+      "query": "nursing infant father costs mutual decision",
+      "field": "all",
+      "expected": [
+        "2:233"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "2:233",
+            "2:232",
+            "65:5",
+            "22:2",
+            "4:23",
+            "3:46",
+            "3:128",
+            "27:49",
+            "28:26",
+            "19:28"
+          ],
+          "ms": 77.031
+        },
+        "deploy": {
+          "results": [
+            "2:233",
+            "22:2",
+            "3:128",
+            "2:232",
+            "12:80",
+            "4:23",
+            "28:26",
+            "37:102",
+            "12:78",
+            "27:49"
+          ],
+          "ms": 79.866
+        },
+        "pr1": {
+          "results": [
+            "2:233",
+            "22:2",
+            "3:128",
+            "2:232",
+            "12:80",
+            "4:23",
+            "28:26",
+            "37:102",
+            "12:78",
+            "27:49"
+          ],
+          "ms": 86.52
+        }
+      }
+    },
+    {
+      "id": "DM16",
+      "query": "lamp shining oil divine guidance",
+      "field": "all",
+      "expected": [
+        "24:35"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "24:34",
+            "24:35",
+            "25:61",
+            "78:13",
+            "33:46",
+            "23:20",
+            "70:8",
+            "71:16",
+            "55:37",
+            "44:45"
+          ],
+          "ms": 62.493
+        },
+        "pr1": {
+          "results": [
+            "24:34",
+            "24:35",
+            "25:61",
+            "78:13",
+            "33:46",
+            "23:20",
+            "70:8",
+            "71:16",
+            "55:37",
+            "44:45"
+          ],
+          "ms": 62.936
+        },
+        "fcs": {
+          "results": [
+            "24:34",
+            "24:35",
+            "24:36",
+            "25:61",
+            "33:46",
+            "2:20",
+            "25:60",
+            "20:22",
+            "78:13",
+            "18:29"
+          ],
+          "ms": 76.724
+        }
+      }
+    },
+    {
+      "id": "DM17",
+      "query": "kind leader forgive advice trust",
+      "field": "all",
+      "expected": [
+        "3:159"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "10:72",
+            "42:37",
+            "59:10",
+            "9:128",
+            "18:54",
+            "2:283",
+            "3:159",
+            "33:72",
+            "26:49",
+            "26:82"
+          ],
+          "ms": 67.538
+        },
+        "fcs": {
+          "results": [
+            "10:72",
+            "3:159",
+            "26:49",
+            "42:37",
+            "18:54",
+            "59:10",
+            "20:71",
+            "8:70",
+            "24:22",
+            "5:11"
+          ],
+          "ms": 62.545
+        },
+        "deploy": {
+          "results": [
+            "10:72",
+            "42:37",
+            "59:10",
+            "9:128",
+            "18:54",
+            "2:283",
+            "3:159",
+            "33:72",
+            "26:49",
+            "26:82"
+          ],
+          "ms": 74.53
+        }
+      }
+    },
+    {
+      "id": "DM18",
+      "query": "gossip suspicion eating dead sibling",
+      "field": "all",
+      "expected": [
+        "49:12"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "49:12",
+            "49:11",
+            "22:6",
+            "2:172",
+            "68:11",
+            "6:139",
+            "2:173",
+            "3:169",
+            "36:33",
+            "6:95"
+          ],
+          "ms": 61.946
+        },
+        "deploy": {
+          "results": [
+            "49:12",
+            "22:6",
+            "49:11",
+            "68:11",
+            "56:52",
+            "2:172",
+            "77:26",
+            "6:139",
+            "2:173",
+            "3:169"
+          ],
+          "ms": 83.504
+        },
+        "pr1": {
+          "results": [
+            "49:12",
+            "22:6",
+            "49:11",
+            "68:11",
+            "56:52",
+            "2:172",
+            "77:26",
+            "6:139",
+            "2:173",
+            "3:169"
+          ],
+          "ms": 70.815
+        }
+      }
+    },
+    {
+      "id": "DM19",
+      "query": "save one life entire humanity israel",
+      "field": "all",
+      "expected": [
+        "5:32"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "19:72",
+            "3:49",
+            "10:103",
+            "2:96",
+            "40:51",
+            "15:59",
+            "17:104",
+            "26:197",
+            "28:21",
+            "26:169"
+          ],
+          "ms": 62.171
+        },
+        "pr1": {
+          "results": [
+            "19:72",
+            "3:49",
+            "10:103",
+            "2:96",
+            "40:51",
+            "15:59",
+            "17:104",
+            "26:197",
+            "28:21",
+            "26:169"
+          ],
+          "ms": 76.143
+        },
+        "fcs": {
+          "results": [
+            "5:32",
+            "19:72",
+            "40:51",
+            "28:21",
+            "2:28",
+            "2:211",
+            "17:2",
+            "2:63",
+            "3:49",
+            "2:85"
+          ],
+          "ms": 101.653
+        }
+      }
+    },
+    {
+      "id": "DM20",
+      "query": "mother pregnancy hardship thank parents return",
+      "field": "all",
+      "expected": [
+        "31:14"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "31:14",
+            "46:15",
+            "12:99",
+            "31:13",
+            "22:2",
+            "29:8",
+            "28:7",
+            "4:11",
+            "46:14",
+            "19:32"
+          ],
+          "ms": 79.6
+        },
+        "fcs": {
+          "results": [
+            "46:14",
+            "31:14",
+            "31:13",
+            "46:15",
+            "12:99",
+            "29:8",
+            "6:151",
+            "65:5",
+            "65:6",
+            "28:7"
+          ],
+          "ms": 79.222
+        },
+        "deploy": {
+          "results": [
+            "31:14",
+            "46:15",
+            "12:99",
+            "31:13",
+            "22:2",
+            "29:8",
+            "28:7",
+            "4:11",
+            "46:14",
+            "19:32"
+          ],
+          "ms": 79.907
+        }
+      }
+    },
+    {
+      "id": "DM21",
+      "query": "jonah whale angry dark prayer",
+      "field": "all",
+      "expected": [
+        "21:87"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "37:139",
+            "68:48",
+            "21:86",
+            "37:141",
+            "9:58",
+            "37:142",
+            "17:78",
+            "4:164",
+            "4:101",
+            "10:98"
+          ],
+          "ms": 49.972
+        },
+        "deploy": {
+          "results": [
+            "37:139",
+            "10:98",
+            "4:101",
+            "37:141",
+            "2:43",
+            "4:102",
+            "55:64",
+            "9:58",
+            "8:35",
+            "42:37"
+          ],
+          "ms": 63.523
+        },
+        "pr1": {
+          "results": [
+            "37:139",
+            "10:98",
+            "4:101",
+            "37:141",
+            "2:43",
+            "4:102",
+            "55:64",
+            "9:58",
+            "8:35",
+            "42:37"
+          ],
+          "ms": 58.886
+        }
+      }
+    },
+    {
+      "id": "DM22",
+      "query": "burden beyond strength mistakes forgiveness",
+      "field": "all",
+      "expected": [
+        "2:286"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "2:286",
+            "4:110",
+            "2:285",
+            "4:99",
+            "11:52",
+            "57:20",
+            "5:39",
+            "4:64",
+            "2:284",
+            "3:159"
+          ],
+          "ms": 87.271
+        },
+        "pr1": {
+          "results": [
+            "2:286",
+            "4:110",
+            "2:285",
+            "4:99",
+            "11:52",
+            "57:20",
+            "5:39",
+            "4:64",
+            "2:284",
+            "3:159"
+          ],
+          "ms": 77.282
+        },
+        "fcs": {
+          "results": [
+            "2:285",
+            "2:286",
+            "64:17",
+            "2:284",
+            "6:164",
+            "57:20",
+            "4:64",
+            "16:110",
+            "30:54",
+            "4:110"
+          ],
+          "ms": 66.065
+        }
+      }
+    },
+    {
+      "id": "DM23",
+      "query": "hard times patient worship seek support",
+      "field": "all",
+      "expected": [
+        "2:153"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "2:153",
+            "38:17",
+            "73:8",
+            "39:10",
+            "7:128",
+            "24:58",
+            "1:5",
+            "13:22",
+            "31:31",
+            "2:45"
+          ],
+          "ms": 67.407
+        },
+        "fcs": {
+          "results": [
+            "5:2",
+            "2:153",
+            "2:45",
+            "38:17",
+            "52:48",
+            "16:96",
+            "40:54",
+            "9:16",
+            "39:10",
+            "8:72"
+          ],
+          "ms": 92.419
+        },
+        "deploy": {
+          "results": [
+            "2:153",
+            "38:17",
+            "73:8",
+            "39:10",
+            "7:128",
+            "24:58",
+            "1:5",
+            "13:22",
+            "31:31",
+            "2:45"
+          ],
+          "ms": 72.587
+        }
+      }
+    },
+    {
+      "id": "DM24",
+      "query": "god never sleeps throne sky knowledge",
+      "field": "all",
+      "expected": [
+        "2:255"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "2:102",
+            "2:255",
+            "20:98",
+            "25:59",
+            "20:52",
+            "27:39",
+            "27:42",
+            "25:58",
+            "13:17",
+            "27:38"
+          ],
+          "ms": 91.89
+        },
+        "deploy": {
+          "results": [
+            "20:98",
+            "27:42",
+            "27:41",
+            "40:7",
+            "27:26",
+            "27:38",
+            "9:129",
+            "45:23",
+            "23:86",
+            "85:15"
+          ],
+          "ms": 55.389
+        },
+        "pr1": {
+          "results": [
+            "20:98",
+            "27:42",
+            "27:41",
+            "40:7",
+            "27:26",
+            "27:38",
+            "9:129",
+            "45:23",
+            "23:86",
+            "85:15"
+          ],
+          "ms": 57.149
+        }
+      }
+    },
+    {
+      "id": "DM25",
+      "query": "charity grain seven hundred reward",
+      "field": "all",
+      "expected": [
+        "2:261"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "2:260",
+            "2:261",
+            "12:46",
+            "2:263",
+            "57:18",
+            "4:114",
+            "9:103",
+            "12:47",
+            "58:12",
+            "2:262"
+          ],
+          "ms": 76.911
+        },
+        "pr1": {
+          "results": [
+            "2:260",
+            "2:261",
+            "12:46",
+            "2:263",
+            "57:18",
+            "4:114",
+            "9:103",
+            "12:47",
+            "58:12",
+            "2:262"
+          ],
+          "ms": 75.102
+        },
+        "fcs": {
+          "results": [
+            "2:260",
+            "2:261",
+            "12:46",
+            "2:263",
+            "57:18",
+            "4:114",
+            "9:103",
+            "12:47",
+            "58:12",
+            "2:262"
+          ],
+          "ms": 72.161
+        }
+      }
+    },
+    {
+      "id": "DM26",
+      "query": "usury commerce lawful forbidden fire",
+      "field": "all",
+      "expected": [
+        "2:275"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "2:275",
+            "3:130",
+            "4:160",
+            "2:278",
+            "2:276",
+            "4:161",
+            "16:115",
+            "30:39",
+            "7:32",
+            "4:29"
+          ],
+          "ms": 79.804
+        },
+        "fcs": {
+          "results": [
+            "2:275",
+            "4:28",
+            "4:160",
+            "3:130",
+            "4:29",
+            "2:168",
+            "2:230",
+            "2:274",
+            "2:173",
+            "5:26"
+          ],
+          "ms": 62.155
+        },
+        "deploy": {
+          "results": [
+            "2:275",
+            "3:130",
+            "4:160",
+            "2:278",
+            "2:276",
+            "4:161",
+            "16:115",
+            "30:39",
+            "7:32",
+            "4:29"
+          ],
+          "ms": 69.938
+        }
+      }
+    },
+    {
+      "id": "DM27",
+      "query": "travel collateral conceal evidence trust",
+      "field": "all",
+      "expected": [
+        "2:283"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "2:282",
+            "2:283",
+            "6:11",
+            "27:69",
+            "4:37",
+            "7:85",
+            "3:73",
+            "4:149",
+            "27:74",
+            "16:80"
+          ],
+          "ms": 76.843
+        },
+        "deploy": {
+          "results": [
+            "2:282",
+            "2:283",
+            "6:11",
+            "3:73",
+            "34:18",
+            "4:149",
+            "33:72",
+            "33:54",
+            "27:74",
+            "27:69"
+          ],
+          "ms": 93.105
+        },
+        "pr1": {
+          "results": [
+            "2:282",
+            "2:283",
+            "6:11",
+            "3:73",
+            "34:18",
+            "4:149",
+            "33:72",
+            "33:54",
+            "27:74",
+            "27:69"
+          ],
+          "ms": 72.485
+        }
+      }
+    },
+    {
+      "id": "DM28",
+      "query": "unity rope enemies brothers pit",
+      "field": "all",
+      "expected": [
+        "3:103"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "3:102",
+            "3:103",
+            "60:7",
+            "111:5",
+            "12:7",
+            "12:58",
+            "60:1",
+            "22:15",
+            "12:15",
+            "12:100"
+          ],
+          "ms": 68.708
+        },
+        "pr1": {
+          "results": [
+            "3:102",
+            "3:103",
+            "60:7",
+            "111:5",
+            "12:7",
+            "12:58",
+            "60:1",
+            "22:15",
+            "12:15",
+            "12:100"
+          ],
+          "ms": 74.153
+        },
+        "fcs": {
+          "results": [
+            "3:103",
+            "3:102",
+            "8:62",
+            "8:63",
+            "60:7",
+            "12:15",
+            "12:100",
+            "25:31",
+            "12:5",
+            "111:5"
+          ],
+          "ms": 53.507
+        }
+      }
+    },
+    {
+      "id": "DM29",
+      "query": "give hardship control anger forgive",
+      "field": "all",
+      "expected": [
+        "3:134"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "3:133",
+            "3:132",
+            "3:134",
+            "7:151",
+            "11:10",
+            "3:162",
+            "7:71",
+            "3:147",
+            "20:81",
+            "24:8"
+          ],
+          "ms": 64.205
+        },
+        "fcs": {
+          "results": [
+            "40:28",
+            "3:134",
+            "3:132",
+            "3:133",
+            "7:199",
+            "42:42",
+            "2:177",
+            "11:10",
+            "42:37",
+            "19:63"
+          ],
+          "ms": 81.683
+        },
+        "deploy": {
+          "results": [
+            "3:133",
+            "3:132",
+            "3:134",
+            "7:151",
+            "11:10",
+            "3:162",
+            "7:71",
+            "3:147",
+            "20:81",
+            "24:8"
+          ],
+          "ms": 67.653
+        }
+      }
+    },
+    {
+      "id": "DM30",
+      "query": "justice testify against family rich poor",
+      "field": "all",
+      "expected": [
+        "4:135"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "3:180",
+            "22:78",
+            "4:134",
+            "4:135",
+            "3:181",
+            "33:45",
+            "3:18",
+            "59:7",
+            "2:282",
+            "5:64"
+          ],
+          "ms": 90.588
+        },
+        "deploy": {
+          "results": [
+            "22:78",
+            "4:135",
+            "3:181",
+            "59:7",
+            "41:20",
+            "12:88",
+            "3:18",
+            "49:9",
+            "6:152",
+            "41:22"
+          ],
+          "ms": 78.033
+        },
+        "pr1": {
+          "results": [
+            "22:78",
+            "4:135",
+            "3:181",
+            "59:7",
+            "41:20",
+            "12:88",
+            "3:18",
+            "49:9",
+            "6:152",
+            "41:22"
+          ],
+          "ms": 80.326
+        }
+      }
+    },
+    {
+      "id": "DM31",
+      "query": "hatred enemies fair judgment righteousness",
+      "field": "all",
+      "expected": [
+        "5:8"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "78:17",
+            "77:14",
+            "77:13",
+            "75:6",
+            "44:40",
+            "37:21",
+            "19:82",
+            "77:36",
+            "75:2",
+            "46:5"
+          ],
+          "ms": 51.145
+        },
+        "pr1": {
+          "results": [
+            "78:17",
+            "77:14",
+            "77:13",
+            "75:6",
+            "44:40",
+            "37:21",
+            "19:82",
+            "77:36",
+            "75:2",
+            "46:5"
+          ],
+          "ms": 52.882
+        },
+        "fcs": {
+          "results": [
+            "5:7",
+            "3:118",
+            "60:7",
+            "29:25",
+            "5:8",
+            "3:103",
+            "19:82",
+            "40:10",
+            "5:14",
+            "6:160"
+          ],
+          "ms": 90.261
+        }
+      }
+    },
+    {
+      "id": "DM32",
+      "query": "birds creatures communities wings gathered",
+      "field": "all",
+      "expected": [
+        "6:38"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "6:37",
+            "6:38",
+            "67:19",
+            "81:5",
+            "27:17",
+            "24:41",
+            "16:79",
+            "67:18",
+            "27:16",
+            "16:78"
+          ],
+          "ms": 56.862
+        },
+        "fcs": {
+          "results": [
+            "6:37",
+            "6:38",
+            "67:19",
+            "81:5",
+            "27:17",
+            "11:6",
+            "24:41",
+            "16:79",
+            "67:18",
+            "27:16"
+          ],
+          "ms": 59.159
+        },
+        "deploy": {
+          "results": [
+            "6:37",
+            "6:38",
+            "67:19",
+            "81:5",
+            "27:17",
+            "24:41",
+            "16:79",
+            "67:18",
+            "27:16",
+            "16:78"
+          ],
+          "ms": 52.053
+        }
+      }
+    },
+    {
+      "id": "DM33",
+      "query": "joseph brothers fake blood garment patience",
+      "field": "all",
+      "expected": [
+        "12:18"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "12:18",
+            "12:17",
+            "12:92",
+            "12:89",
+            "12:83",
+            "12:16",
+            "12:56",
+            "12:96",
+            "12:88",
+            "12:85"
+          ],
+          "ms": 50.3
+        },
+        "deploy": {
+          "results": [
+            "12:18",
+            "12:89",
+            "12:17",
+            "12:56",
+            "12:83",
+            "12:7",
+            "12:58",
+            "12:4",
+            "12:11",
+            "12:77"
+          ],
+          "ms": 50.567
+        },
+        "pr1": {
+          "results": [
+            "12:18",
+            "12:89",
+            "12:17",
+            "12:56",
+            "12:83",
+            "12:7",
+            "12:58",
+            "12:4",
+            "12:11",
+            "12:77"
+          ],
+          "ms": 50.524
+        }
+      }
+    },
+    {
+      "id": "DM34",
+      "query": "father eyesight restored shirt family",
+      "field": "all",
+      "expected": [
+        "12:93"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "12:92",
+            "12:93",
+            "12:26",
+            "12:25",
+            "12:96",
+            "12:27",
+            "21:84",
+            "20:40",
+            "12:28",
+            "12:65"
+          ],
+          "ms": 45.632
+        },
+        "pr1": {
+          "results": [
+            "12:92",
+            "12:93",
+            "12:26",
+            "12:25",
+            "12:96",
+            "12:27",
+            "21:84",
+            "20:40",
+            "12:28",
+            "12:65"
+          ],
+          "ms": 45.238
+        },
+        "fcs": {
+          "results": [
+            "12:92",
+            "12:96",
+            "12:93",
+            "12:95",
+            "12:94",
+            "20:40",
+            "12:26",
+            "12:97",
+            "12:99",
+            "21:84"
+          ],
+          "ms": 61.869
+        }
+      }
+    },
+    {
+      "id": "DM35",
+      "query": "fairness kindness family oppression forbidden",
+      "field": "all",
+      "expected": [
+        "16:90"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "7:33",
+            "4:5",
+            "16:90",
+            "4:19",
+            "6:151",
+            "4:8",
+            "54:34",
+            "7:32",
+            "58:8",
+            "21:76"
+          ],
+          "ms": 76.748
+        },
+        "fcs": {
+          "results": [
+            "6:151",
+            "16:90",
+            "16:89",
+            "4:5",
+            "7:33",
+            "4:19",
+            "6:150",
+            "6:145",
+            "60:7",
+            "93:9"
+          ],
+          "ms": 99.04
+        },
+        "deploy": {
+          "results": [
+            "7:33",
+            "4:5",
+            "16:90",
+            "4:19",
+            "6:151",
+            "4:8",
+            "54:34",
+            "7:32",
+            "58:8",
+            "21:76"
+          ],
+          "ms": 79.926
+        }
+      }
+    },
+    {
+      "id": "DM36",
+      "query": "preach religion wise respectful argument",
+      "field": "all",
+      "expected": [
+        "16:125"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "39:1",
+            "2:150",
+            "3:62",
+            "3:58",
+            "42:15",
+            "3:73",
+            "6:83",
+            "2:138",
+            "51:30",
+            "76:30"
+          ],
+          "ms": 58.94
+        },
+        "deploy": {
+          "results": [
+            "39:1",
+            "42:15",
+            "6:83",
+            "76:30",
+            "2:150",
+            "51:30",
+            "3:18",
+            "3:62",
+            "8:49",
+            "3:73"
+          ],
+          "ms": 57.569
+        },
+        "pr1": {
+          "results": [
+            "39:1",
+            "42:15",
+            "6:83",
+            "76:30",
+            "2:150",
+            "51:30",
+            "3:18",
+            "3:62",
+            "8:49",
+            "3:73"
+          ],
+          "ms": 55.838
+        }
+      }
+    },
+    {
+      "id": "DM37",
+      "query": "elderly parents rude words respect",
+      "field": "all",
+      "expected": [
+        "17:23"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "17:23",
+            "2:83",
+            "12:99",
+            "29:8",
+            "18:80",
+            "31:14",
+            "2:180",
+            "48:9",
+            "46:15",
+            "24:59"
+          ],
+          "ms": 85.758
+        },
+        "pr1": {
+          "results": [
+            "17:23",
+            "2:83",
+            "12:99",
+            "29:8",
+            "18:80",
+            "31:14",
+            "2:180",
+            "48:9",
+            "46:15",
+            "24:59"
+          ],
+          "ms": 68.574
+        },
+        "fcs": {
+          "results": [
+            "17:23",
+            "24:59",
+            "3:159",
+            "12:99",
+            "29:8",
+            "2:83",
+            "31:14",
+            "4:7",
+            "17:24",
+            "4:31"
+          ],
+          "ms": 67.957
+        }
+      }
+    },
+    {
+      "id": "DM38",
+      "query": "orphan inheritance adulthood promise accountability",
+      "field": "all",
+      "expected": [
+        "17:34"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "17:34",
+            "93:9",
+            "107:2",
+            "90:15",
+            "89:19",
+            "89:17",
+            "19:63",
+            "4:127",
+            "93:6",
+            "76:8"
+          ],
+          "ms": 45.737
+        },
+        "fcs": {
+          "results": [
+            "17:34",
+            "4:6",
+            "4:5",
+            "35:32",
+            "4:127",
+            "18:82",
+            "4:7",
+            "4:126",
+            "46:16",
+            "28:13"
+          ],
+          "ms": 55.401
+        },
+        "deploy": {
+          "results": [
+            "17:34",
+            "93:9",
+            "107:2",
+            "90:15",
+            "89:19",
+            "89:17",
+            "19:63",
+            "4:127",
+            "93:6",
+            "76:8"
+          ],
+          "ms": 53.597
+        }
+      }
+    },
+    {
+      "id": "DM39",
+      "query": "children riches worldly life lasting deeds reward",
+      "field": "all",
+      "expected": [
+        "18:46"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "18:46",
+            "18:28",
+            "57:20",
+            "18:45",
+            "3:14",
+            "42:36",
+            "9:69",
+            "29:25",
+            "18:44",
+            "57:19"
+          ],
+          "ms": 83.775
+        },
+        "deploy": {
+          "results": [
+            "18:46",
+            "42:36",
+            "28:60",
+            "57:20",
+            "9:55",
+            "18:45",
+            "16:96",
+            "20:131",
+            "11:15",
+            "3:14"
+          ],
+          "ms": 78.31
+        },
+        "pr1": {
+          "results": [
+            "18:46",
+            "42:36",
+            "28:60",
+            "57:20",
+            "9:55",
+            "18:45",
+            "16:96",
+            "20:131",
+            "11:15",
+            "3:14"
+          ],
+          "ms": 75.452
+        }
+      }
+    },
+    {
+      "id": "DM40",
+      "query": "enter home permission greeting inhabitants",
+      "field": "all",
+      "expected": [
+        "24:27"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "24:26",
+            "24:27",
+            "24:28",
+            "24:61",
+            "14:23",
+            "13:23",
+            "9:86",
+            "16:31",
+            "13:22",
+            "7:49"
+          ],
+          "ms": 74.214
+        },
+        "pr1": {
+          "results": [
+            "24:26",
+            "24:27",
+            "24:28",
+            "24:61",
+            "14:23",
+            "13:23",
+            "9:86",
+            "16:31",
+            "13:22",
+            "7:49"
+          ],
+          "ms": 77.262
+        },
+        "fcs": {
+          "results": [
+            "24:26",
+            "24:27",
+            "16:31",
+            "24:28",
+            "24:61",
+            "16:30",
+            "24:60",
+            "39:73",
+            "22:24",
+            "14:23"
+          ],
+          "ms": 60.044
+        }
+      }
+    },
+    {
+      "id": "DM41",
+      "query": "ignorant insult humble servants peace",
+      "field": "all",
+      "expected": [
+        "25:63"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "25:63",
+            "28:55",
+            "6:108",
+            "16:48",
+            "37:130",
+            "37:79",
+            "6:43",
+            "7:94",
+            "19:62",
+            "27:59"
+          ],
+          "ms": 51.49
+        },
+        "fcs": {
+          "results": [
+            "25:63",
+            "28:55",
+            "6:108",
+            "16:48",
+            "37:130",
+            "37:79",
+            "6:43",
+            "7:94",
+            "19:62",
+            "27:59"
+          ],
+          "ms": 55.455
+        },
+        "deploy": {
+          "results": [
+            "25:63",
+            "28:55",
+            "6:108",
+            "16:48",
+            "37:130",
+            "37:79",
+            "6:43",
+            "7:94",
+            "19:62",
+            "27:59"
+          ],
+          "ms": 58.947
+        }
+      }
+    },
+    {
+      "id": "DM42",
+      "query": "spending neither wasteful stingy moderation",
+      "field": "all",
+      "expected": [
+        "25:67"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "17:26",
+            "25:66",
+            "17:29",
+            "25:67",
+            "2:267",
+            "17:27",
+            "7:30",
+            "47:36",
+            "17:100",
+            "9:41"
+          ],
+          "ms": 44.476
+        },
+        "deploy": {
+          "results": [
+            "17:100",
+            "4:37",
+            "17:26",
+            "17:29",
+            "25:67",
+            "2:267",
+            "17:27",
+            "9:75",
+            "9:76",
+            "47:37"
+          ],
+          "ms": 66.675
+        },
+        "pr1": {
+          "results": [
+            "17:100",
+            "4:37",
+            "17:26",
+            "17:29",
+            "25:67",
+            "2:267",
+            "17:27",
+            "9:75",
+            "9:76",
+            "47:37"
+          ],
+          "ms": 53.3
+        }
+      }
+    },
+    {
+      "id": "DM43",
+      "query": "different tongues skin colours divine signs",
+      "field": "all",
+      "expected": [
+        "30:22"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "30:21",
+            "41:53",
+            "24:24",
+            "48:11",
+            "4:46",
+            "12:67",
+            "20:126",
+            "68:51",
+            "30:20",
+            "51:20"
+          ],
+          "ms": 75.852
+        },
+        "pr1": {
+          "results": [
+            "30:21",
+            "41:53",
+            "24:24",
+            "48:11",
+            "4:46",
+            "12:67",
+            "20:126",
+            "68:51",
+            "30:20",
+            "51:20"
+          ],
+          "ms": 68.774
+        },
+        "fcs": {
+          "results": [
+            "30:21",
+            "68:51",
+            "41:53",
+            "16:79",
+            "4:55",
+            "4:46",
+            "24:24",
+            "20:126",
+            "36:36",
+            "2:204"
+          ],
+          "ms": 79.95
+        }
+      }
+    },
+    {
+      "id": "DM44",
+      "query": "sinners despair hope mercy forgiveness",
+      "field": "all",
+      "expected": [
+        "39:53"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "39:52",
+            "39:53",
+            "24:20",
+            "24:21",
+            "12:97",
+            "57:27",
+            "1:3",
+            "4:110",
+            "4:96",
+            "3:30"
+          ],
+          "ms": 77.586
+        },
+        "fcs": {
+          "results": [
+            "39:52",
+            "39:53",
+            "3:30",
+            "9:102",
+            "12:91",
+            "7:167",
+            "24:20",
+            "60:12",
+            "7:152",
+            "12:87"
+          ],
+          "ms": 84.668
+        },
+        "deploy": {
+          "results": [
+            "39:52",
+            "39:53",
+            "24:20",
+            "24:21",
+            "12:97",
+            "57:27",
+            "1:3",
+            "4:110",
+            "4:96",
+            "3:30"
+          ],
+          "ms": 72.35
+        }
+      }
+    },
+    {
+      "id": "DM45",
+      "query": "enemy becomes friend respond evil kindness",
+      "field": "all",
+      "expected": [
+        "41:34"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "41:33",
+            "2:24",
+            "9:118",
+            "17:1",
+            "41:34",
+            "7:200",
+            "2:97",
+            "35:6",
+            "3:30",
+            "3:179"
+          ],
+          "ms": 73.97
+        },
+        "deploy": {
+          "results": [
+            "41:34",
+            "41:33",
+            "35:6",
+            "2:97",
+            "3:30",
+            "10:11",
+            "28:54",
+            "4:125",
+            "26:101",
+            "25:28"
+          ],
+          "ms": 71.802
+        },
+        "pr1": {
+          "results": [
+            "41:34",
+            "41:33",
+            "35:6",
+            "2:97",
+            "3:30",
+            "10:11",
+            "28:54",
+            "4:125",
+            "26:101",
+            "25:28"
+          ],
+          "ms": 71.166
+        }
+      }
+    },
+    {
+      "id": "DM46",
+      "query": "tribes ethnicities honor righteousness meet",
+      "field": "all",
+      "expected": [
+        "49:13"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "49:13",
+            "7:160",
+            "2:223",
+            "89:17",
+            "2:44",
+            "84:6",
+            "33:44",
+            "19:81",
+            "70:42",
+            "2:46"
+          ],
+          "ms": 69.546
+        },
+        "pr1": {
+          "results": [
+            "49:13",
+            "7:160",
+            "2:223",
+            "89:17",
+            "2:44",
+            "84:6",
+            "33:44",
+            "19:81",
+            "70:42",
+            "2:46"
+          ],
+          "ms": 75.932
+        },
+        "fcs": {
+          "results": [
+            "49:13",
+            "48:26",
+            "25:68",
+            "2:223",
+            "49:12",
+            "89:17",
+            "7:160",
+            "19:60",
+            "2:44",
+            "9:70"
+          ],
+          "ms": 65.507
+        }
+      }
+    },
+    {
+      "id": "DM47",
+      "query": "world entertainment rain yellow plants afterlife forgiveness",
+      "field": "all",
+      "expected": [
+        "57:20"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "57:20",
+            "39:21",
+            "20:53",
+            "31:10",
+            "71:11",
+            "4:99",
+            "5:39",
+            "4:110",
+            "11:52",
+            "16:10"
+          ],
+          "ms": 75.865
+        },
+        "fcs": {
+          "results": [
+            "57:20",
+            "24:22",
+            "39:21",
+            "34:1",
+            "20:53",
+            "10:24",
+            "35:27",
+            "42:28",
+            "23:18",
+            "30:49"
+          ],
+          "ms": 81.863
+        },
+        "deploy": {
+          "results": [
+            "57:20",
+            "39:21",
+            "20:53",
+            "31:10",
+            "71:11",
+            "4:99",
+            "5:39",
+            "4:110",
+            "11:52",
+            "16:10"
+          ],
+          "ms": 82.002
+        }
+      }
+    },
+    {
+      "id": "DM48",
+      "query": "truth perseverance faith righteous actions",
+      "field": "all",
+      "expected": [
+        "103:3"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "103:2",
+            "3:16",
+            "16:96",
+            "3:200",
+            "2:176",
+            "3:146",
+            "2:124",
+            "40:7",
+            "46:15",
+            "5:12"
+          ],
+          "ms": 112.3
+        },
+        "deploy": {
+          "results": [
+            "103:2",
+            "3:16",
+            "16:96",
+            "3:200",
+            "2:176",
+            "49:14",
+            "4:124",
+            "2:153",
+            "20:75",
+            "32:18"
+          ],
+          "ms": 93.112
+        },
+        "pr1": {
+          "results": [
+            "103:2",
+            "3:16",
+            "16:96",
+            "3:200",
+            "2:176",
+            "49:14",
+            "4:124",
+            "2:153",
+            "20:75",
+            "32:18"
+          ],
+          "ms": 91.608
+        }
+      }
+    },
+    {
+      "id": "DM49",
+      "query": "baqarah نوم",
+      "field": "all",
+      "expected": [
+        "2:255"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "2:255",
+            "2:254",
+            "2:66",
+            "2:67",
+            "2:285",
+            "2:60",
+            "2:8",
+            "2:73",
+            "2:286",
+            "2:180"
+          ],
+          "ms": 72.833
+        },
+        "pr1": {
+          "results": [
+            "2:255"
+          ],
+          "ms": 151.292
+        },
+        "fcs": {
+          "results": [
+            "2:255"
+          ],
+          "ms": 43.678
+        }
+      }
+    },
+    {
+      "id": "DM50",
+      "query": "yusuf قميص",
+      "field": "all",
+      "expected": [
+        "12:93"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "12:26",
+            "12:28",
+            "12:27",
+            "12:25",
+            "12:18",
+            "12:92",
+            "12:17",
+            "12:24",
+            "12:89",
+            "12:4"
+          ],
+          "ms": 160.341
+        },
+        "fcs": {
+          "results": [
+            "12:26",
+            "12:28",
+            "12:27",
+            "12:25",
+            "12:18",
+            "12:92",
+            "12:17",
+            "12:24",
+            "12:89",
+            "12:4"
+          ],
+          "ms": 28.923
+        },
+        "deploy": {
+          "results": [
+            "12:26",
+            "12:25",
+            "12:92",
+            "12:17",
+            "12:24",
+            "12:89",
+            "12:4",
+            "12:10",
+            "12:88",
+            "12:56"
+          ],
+          "ms": 53.082
+        }
+      }
+    },
+    {
+      "id": "DM51",
+      "query": "nur زيتون",
+      "field": "all",
+      "expected": [
+        "24:35"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "24:35",
+            "24:64",
+            "24:34",
+            "24:1",
+            "24:39",
+            "71:15",
+            "35:19",
+            "6:1",
+            "33:42",
+            "5:43"
+          ],
+          "ms": 30.665
+        },
+        "deploy": {
+          "results": [
+            "24:64",
+            "24:34",
+            "24:1",
+            "24:39",
+            "71:15",
+            "35:19",
+            "6:1",
+            "33:42",
+            "5:43",
+            "9:43"
+          ],
+          "ms": 44.36
+        },
+        "pr1": {
+          "results": [
+            "24:35",
+            "24:64",
+            "24:34",
+            "24:1",
+            "24:39",
+            "71:15",
+            "35:19",
+            "6:1",
+            "33:42",
+            "5:43"
+          ],
+          "ms": 175.194
+        }
+      }
+    },
+    {
+      "id": "DM52",
+      "query": "zumar الذنوب",
+      "field": "all",
+      "expected": [
+        "39:53"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "39:53",
+            "3:135",
+            "39:52",
+            "39:70",
+            "53:58",
+            "42:12",
+            "99:8",
+            "54:53",
+            "2:199",
+            "18:45"
+          ],
+          "ms": 49.4
+        },
+        "pr1": {
+          "results": [
+            "39:53",
+            "3:135",
+            "39:52",
+            "39:70",
+            "53:58",
+            "42:12",
+            "99:8",
+            "54:53",
+            "2:199",
+            "18:45"
+          ],
+          "ms": 46.886
+        },
+        "fcs": {
+          "results": [
+            "39:53",
+            "39:52",
+            "3:135",
+            "39:70",
+            "53:58",
+            "42:12",
+            "99:8",
+            "54:53",
+            "2:199",
+            "18:45"
+          ],
+          "ms": 25.652
+        }
+      }
+    },
+    {
+      "id": "DM53",
+      "query": "luqman الوالدين",
+      "field": "all",
+      "expected": [
+        "31:14"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "31:13",
+            "31:12",
+            "31:16",
+            "31:11",
+            "31:19",
+            "31:17",
+            "31:18",
+            "31:10",
+            "31:14",
+            "31:33"
+          ],
+          "ms": 55.931
+        },
+        "fcs": {
+          "results": [
+            "31:13",
+            "31:12",
+            "31:16",
+            "31:11",
+            "31:19",
+            "31:17",
+            "31:18",
+            "31:10",
+            "31:14",
+            "31:33"
+          ],
+          "ms": 26.293
+        },
+        "deploy": {
+          "results": [
+            "31:13",
+            "31:12",
+            "31:16",
+            "31:11",
+            "31:19",
+            "31:17",
+            "31:18",
+            "31:10",
+            "31:14",
+            "31:33"
+          ],
+          "ms": 52.122
+        }
+      }
+    },
+    {
+      "id": "DM54",
+      "query": "baqarah الصبر prayer",
+      "field": "all",
+      "expected": [
+        "2:153"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "2:152",
+            "2:44",
+            "2:43",
+            "4:101",
+            "4:102",
+            "8:35",
+            "2:238",
+            "17:78",
+            "2:239",
+            "2:45"
+          ],
+          "ms": 45.56
+        },
+        "deploy": {
+          "results": [
+            "2:43",
+            "4:101",
+            "4:102",
+            "8:35",
+            "2:238",
+            "17:78",
+            "2:239",
+            "2:45",
+            "70:22",
+            "4:43"
+          ],
+          "ms": 96.156
+        },
+        "pr1": {
+          "results": [
+            "2:43",
+            "4:101",
+            "4:102",
+            "8:35",
+            "2:238",
+            "17:78",
+            "2:239",
+            "2:45",
+            "70:22",
+            "4:43"
+          ],
+          "ms": 92.33
+        }
+      }
+    },
+    {
+      "id": "DM55",
+      "query": "baqarah يحيط",
+      "field": "all",
+      "expected": [
+        "2:255"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "2:66",
+            "2:67",
+            "2:285",
+            "2:60",
+            "2:8",
+            "2:73",
+            "2:286",
+            "2:180",
+            "2:4",
+            "2:219"
+          ],
+          "ms": 58.006
+        },
+        "pr1": {
+          "results": [
+            "2:255",
+            "2:66",
+            "2:67",
+            "2:285",
+            "2:60",
+            "2:8",
+            "2:73",
+            "2:286",
+            "2:180",
+            "2:4"
+          ],
+          "ms": 189.897
+        },
+        "fcs": {
+          "results": [
+            "2:255",
+            "2:66",
+            "2:67",
+            "2:285",
+            "2:60",
+            "2:8",
+            "2:73",
+            "2:286",
+            "2:180",
+            "2:4"
+          ],
+          "ms": 75.899
+        }
+      }
+    },
+    {
+      "id": "DM56",
+      "query": "baqarah تداي",
+      "field": "all",
+      "expected": [
+        "2:282"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "2:282",
+            "2:66",
+            "2:67",
+            "2:285",
+            "2:60",
+            "2:8",
+            "2:73",
+            "2:286",
+            "2:180",
+            "2:4"
+          ],
+          "ms": 199.545
+        },
+        "fcs": {
+          "results": [
+            "2:282",
+            "2:66",
+            "2:67",
+            "2:285",
+            "2:60",
+            "2:8",
+            "2:73",
+            "2:286",
+            "2:180",
+            "2:4"
+          ],
+          "ms": 70.58
+        },
+        "deploy": {
+          "results": [
+            "2:66",
+            "2:67",
+            "2:285",
+            "2:60",
+            "2:8",
+            "2:73",
+            "2:286",
+            "2:180",
+            "2:4",
+            "2:219"
+          ],
+          "ms": 63.844
+        }
+      }
+    },
+    {
+      "id": "DM57",
+      "query": "imran واعت",
+      "field": "all",
+      "expected": [
+        "3:103"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "3:103",
+            "3:35",
+            "66:12",
+            "3:33",
+            "3:32",
+            "3:31",
+            "3:34",
+            "3:42",
+            "3:48",
+            "3:3"
+          ],
+          "ms": 27.478
+        },
+        "deploy": {
+          "results": [
+            "3:35",
+            "66:12",
+            "3:33",
+            "3:32",
+            "3:31",
+            "3:34",
+            "3:42",
+            "3:48",
+            "3:3",
+            "3:191"
+          ],
+          "ms": 38.37
+        },
+        "pr1": {
+          "results": [
+            "3:103",
+            "3:35",
+            "66:12",
+            "3:33",
+            "3:32",
+            "3:31",
+            "3:34",
+            "3:42",
+            "3:48",
+            "3:3"
+          ],
+          "ms": 189.66
+        }
+      }
+    },
+    {
+      "id": "DM58",
+      "query": "nisa كونو",
+      "field": "all",
+      "expected": [
+        "4:135"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "33:54",
+            "4:41",
+            "4:176",
+            "40:78",
+            "2:83",
+            "62:8",
+            "83:14",
+            "2:88",
+            "2:219",
+            "4:43"
+          ],
+          "ms": 79.135
+        },
+        "pr1": {
+          "results": [
+            "4:135",
+            "33:54",
+            "4:41",
+            "4:176",
+            "40:78",
+            "2:83",
+            "62:8",
+            "83:14",
+            "2:88",
+            "2:219"
+          ],
+          "ms": 196.344
+        },
+        "fcs": {
+          "results": [
+            "4:135",
+            "33:54",
+            "4:41",
+            "4:176",
+            "40:78",
+            "2:83",
+            "62:8",
+            "83:14",
+            "2:88",
+            "2:219"
+          ],
+          "ms": 35.535
+        }
+      }
+    },
+    {
+      "id": "DM59",
+      "query": "maidah كتبن",
+      "field": "all",
+      "expected": [
+        "5:32"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "8:8",
+            "2:216",
+            "4:77",
+            "92:10",
+            "6:135",
+            "2:58",
+            "22:40",
+            "7:156",
+            "2:158",
+            "90:1"
+          ],
+          "ms": 329.72
+        },
+        "fcs": {
+          "results": [
+            "8:8",
+            "2:216",
+            "4:77",
+            "92:10",
+            "6:135",
+            "2:58",
+            "22:40",
+            "7:156",
+            "2:158",
+            "90:1"
+          ],
+          "ms": 164.091
+        },
+        "deploy": {
+          "results": [
+            "8:8",
+            "2:216",
+            "4:77",
+            "92:10",
+            "6:135",
+            "2:58",
+            "22:40",
+            "7:156",
+            "2:158",
+            "90:1"
+          ],
+          "ms": 201.071
+        }
+      }
+    },
+    {
+      "id": "DM60",
+      "query": "anam بجنا",
+      "field": "all",
+      "expected": [
+        "6:38"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "55:9"
+          ],
+          "ms": 25.834
+        },
+        "deploy": {
+          "results": [
+            "55:9"
+          ],
+          "ms": 3.136
+        },
+        "pr1": {
+          "results": [
+            "55:9"
+          ],
+          "ms": 159.427
+        }
+      }
+    },
+    {
+      "id": "DM61",
+      "query": "araf زينت",
+      "field": "all",
+      "expected": [
+        "7:31"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "20:95"
+          ],
+          "ms": 4.919
+        },
+        "pr1": {
+          "results": [
+            "20:95"
+          ],
+          "ms": 149.282
+        },
+        "fcs": {
+          "results": [
+            "20:95"
+          ],
+          "ms": 10.436
+        }
+      }
+    },
+    {
+      "id": "DM62",
+      "query": "hud مجري",
+      "field": "all",
+      "expected": [
+        "11:41"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "11:41",
+            "11:50",
+            "11:53",
+            "11:58",
+            "7:67",
+            "7:65",
+            "7:71",
+            "11:89",
+            "11:60",
+            "26:124"
+          ],
+          "ms": 183.853
+        },
+        "fcs": {
+          "results": [
+            "11:41",
+            "11:40",
+            "11:50",
+            "11:53",
+            "11:58",
+            "7:67",
+            "7:65",
+            "7:71",
+            "11:89",
+            "11:60"
+          ],
+          "ms": 29.371
+        },
+        "deploy": {
+          "results": [
+            "11:50",
+            "11:53",
+            "11:58",
+            "7:67",
+            "7:65",
+            "7:71",
+            "11:89",
+            "11:60",
+            "26:124",
+            "11:57"
+          ],
+          "ms": 50.124
+        }
+      }
+    },
+    {
+      "id": "DM63",
+      "query": "yusuf بقمي",
+      "field": "all",
+      "expected": [
+        "12:93"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "12:93",
+            "12:89",
+            "12:4",
+            "12:10",
+            "12:88",
+            "12:56",
+            "12:90",
+            "12:11",
+            "12:55",
+            "12:77"
+          ],
+          "ms": 35.294
+        },
+        "deploy": {
+          "results": [
+            "12:89",
+            "12:4",
+            "12:10",
+            "12:88",
+            "12:56",
+            "12:90",
+            "12:11",
+            "12:55",
+            "12:77",
+            "12:99"
+          ],
+          "ms": 55.684
+        },
+        "pr1": {
+          "results": [
+            "12:93",
+            "12:89",
+            "12:4",
+            "12:10",
+            "12:88",
+            "12:56",
+            "12:90",
+            "12:11",
+            "12:55",
+            "12:77"
+          ],
+          "ms": 193.298
+        }
+      }
+    },
+    {
+      "id": "DM64",
+      "query": "nahl واوح",
+      "field": "all",
+      "expected": [
+        "16:68"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "16:128",
+            "16:67",
+            "16:90",
+            "40:79",
+            "6:148",
+            "16:23",
+            "16:19",
+            "16:20",
+            "16:17",
+            "16:42"
+          ],
+          "ms": 38.137
+        },
+        "pr1": {
+          "results": [
+            "16:68",
+            "16:128",
+            "16:67",
+            "16:90",
+            "40:79",
+            "6:148",
+            "16:23",
+            "16:19",
+            "16:20",
+            "16:17"
+          ],
+          "ms": 194.651
+        },
+        "fcs": {
+          "results": [
+            "16:68",
+            "16:128",
+            "16:67",
+            "16:90",
+            "40:79",
+            "6:148",
+            "16:23",
+            "16:19",
+            "16:20",
+            "16:17"
+          ],
+          "ms": 25.151
+        }
+      }
+    },
+    {
+      "id": "DM65",
+      "query": "kahf مداد",
+      "field": "all",
+      "expected": [
+        "18:109"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "18:109",
+            "18:9",
+            "18:10",
+            "18:8",
+            "18:83",
+            "18:110",
+            "18:5",
+            "38:81",
+            "19:76",
+            "20:116"
+          ],
+          "ms": 193.212
+        },
+        "fcs": {
+          "results": [
+            "18:109",
+            "18:9",
+            "18:10",
+            "18:8",
+            "18:83",
+            "18:110",
+            "18:5",
+            "38:81",
+            "19:76",
+            "20:116"
+          ],
+          "ms": 25.392
+        },
+        "deploy": {
+          "results": [
+            "18:9",
+            "18:10",
+            "18:8",
+            "18:83",
+            "18:110",
+            "18:5",
+            "38:81",
+            "19:76",
+            "20:116",
+            "18:3"
+          ],
+          "ms": 36.523
+        }
+      }
+    },
+    {
+      "id": "DM66",
+      "query": "maryam واشر",
+      "field": "all",
+      "expected": [
+        "19:26"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "19:26",
+            "19:20",
+            "19:18",
+            "19:23",
+            "19:17",
+            "19:14",
+            "19:15",
+            "3:35",
+            "19:16",
+            "3:34"
+          ],
+          "ms": 33.361
+        },
+        "deploy": {
+          "results": [
+            "19:20",
+            "19:18",
+            "19:26",
+            "19:23",
+            "19:17",
+            "19:14",
+            "19:15",
+            "3:35",
+            "19:16",
+            "3:34"
+          ],
+          "ms": 66.282
+        },
+        "pr1": {
+          "results": [
+            "19:26",
+            "19:20",
+            "19:18",
+            "19:23",
+            "19:17",
+            "19:14",
+            "19:15",
+            "3:35",
+            "19:16",
+            "3:34"
+          ],
+          "ms": 191.024
+        }
+      }
+    },
+    {
+      "id": "DM67",
+      "query": "ta ha يفقه",
+      "field": "all",
+      "expected": [
+        "20:28"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "20:1",
+            "20:135",
+            "28:1",
+            "42:1",
+            "44:1",
+            "40:1",
+            "46:1",
+            "45:1",
+            "20:2",
+            "26:1"
+          ],
+          "ms": 31.345
+        },
+        "pr1": {
+          "results": [
+            "20:28",
+            "20:1",
+            "20:135",
+            "28:1",
+            "42:1",
+            "44:1",
+            "40:1",
+            "46:1",
+            "45:1",
+            "20:2"
+          ],
+          "ms": 35.942
+        },
+        "fcs": {
+          "results": [
+            "20:28",
+            "20:1",
+            "20:135",
+            "28:1",
+            "42:1",
+            "44:1",
+            "40:1",
+            "46:1",
+            "45:1",
+            "20:2"
+          ],
+          "ms": 40.247
+        }
+      }
+    },
+    {
+      "id": "DM68",
+      "query": "anbiya مغضب",
+      "field": "all",
+      "expected": [
+        "21:87"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "21:87",
+            "21:112",
+            "37:93",
+            "37:97",
+            "38:48",
+            "37:94",
+            "37:139",
+            "23:52",
+            "19:16",
+            "21:69"
+          ],
+          "ms": 157.014
+        },
+        "fcs": {
+          "results": [
+            "21:87",
+            "21:112",
+            "37:93",
+            "37:97",
+            "38:48",
+            "37:94",
+            "37:139",
+            "23:52",
+            "19:16",
+            "21:69"
+          ],
+          "ms": 20.649
+        },
+        "deploy": {
+          "results": [
+            "21:112",
+            "37:93",
+            "37:97",
+            "38:48",
+            "37:94",
+            "37:139",
+            "23:52",
+            "19:16",
+            "21:69",
+            "21:60"
+          ],
+          "ms": 25.06
+        }
+      }
+    },
+    {
+      "id": "DM69",
+      "query": "nur نوره",
+      "field": "all",
+      "expected": [
+        "24:35"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "24:35",
+            "61:7",
+            "2:20",
+            "9:31",
+            "24:64",
+            "24:34",
+            "24:1",
+            "24:39",
+            "71:15",
+            "61:8"
+          ],
+          "ms": 40.174
+        },
+        "deploy": {
+          "results": [
+            "61:7",
+            "2:20",
+            "9:31",
+            "24:35",
+            "24:64",
+            "24:34",
+            "24:1",
+            "24:39",
+            "71:15",
+            "61:8"
+          ],
+          "ms": 96.504
+        },
+        "pr1": {
+          "results": [
+            "24:35",
+            "61:7",
+            "2:20",
+            "9:31",
+            "24:64",
+            "24:34",
+            "24:1",
+            "24:39",
+            "71:15",
+            "61:8"
+          ],
+          "ms": 229.278
+        }
+      }
+    },
+    {
+      "id": "DM70",
+      "query": "furqan انفق",
+      "field": "all",
+      "expected": [
+        "25:67"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "57:10",
+            "18:42",
+            "25:77",
+            "25:66",
+            "25:60",
+            "3:3",
+            "25:1",
+            "34:39",
+            "8:29",
+            "2:212"
+          ],
+          "ms": 53.748
+        },
+        "pr1": {
+          "results": [
+            "25:67",
+            "57:10",
+            "18:42",
+            "25:77",
+            "25:66",
+            "25:60",
+            "3:3",
+            "25:1",
+            "34:39",
+            "8:29"
+          ],
+          "ms": 190.871
+        },
+        "fcs": {
+          "results": [
+            "25:67",
+            "25:66",
+            "57:10",
+            "18:42",
+            "25:77",
+            "25:60",
+            "3:3",
+            "25:1",
+            "34:39",
+            "8:29"
+          ],
+          "ms": 25.575
+        }
+      }
+    },
+    {
+      "id": "DM71",
+      "query": "naml مسكن",
+      "field": "all",
+      "expected": [
+        "27:18"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "27:18",
+            "27:17",
+            "27:93",
+            "14:45",
+            "21:12",
+            "61:11",
+            "7:100",
+            "9:71",
+            "14:44",
+            "27:53"
+          ],
+          "ms": 188.875
+        },
+        "fcs": {
+          "results": [
+            "27:18",
+            "27:17",
+            "27:93",
+            "14:45",
+            "21:12",
+            "61:11",
+            "7:100",
+            "9:71",
+            "14:44",
+            "27:53"
+          ],
+          "ms": 13.989
+        },
+        "deploy": {
+          "results": [
+            "27:17",
+            "27:93",
+            "14:45",
+            "21:12",
+            "61:11",
+            "7:100",
+            "9:71",
+            "14:44",
+            "27:53",
+            "27:1"
+          ],
+          "ms": 47.834
+        }
+      }
+    },
+    {
+      "id": "DM72",
+      "query": "qasas واوح",
+      "field": "all",
+      "expected": [
+        "28:7"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "28:7",
+            "28:88",
+            "28:24",
+            "6:22",
+            "12:2",
+            "2:49",
+            "3:199",
+            "28:1",
+            "7:175",
+            "28:2"
+          ],
+          "ms": 24.162
+        },
+        "deploy": {
+          "results": [
+            "28:88",
+            "28:24",
+            "6:22",
+            "12:2",
+            "2:49",
+            "3:199",
+            "28:1",
+            "7:175",
+            "28:2",
+            "28:39"
+          ],
+          "ms": 38.308
+        },
+        "pr1": {
+          "results": [
+            "28:7",
+            "28:88",
+            "28:24",
+            "6:22",
+            "12:2",
+            "2:49",
+            "3:199",
+            "28:1",
+            "7:175",
+            "28:2"
+          ],
+          "ms": 180.606
+        }
+      }
+    },
+    {
+      "id": "DM73",
+      "query": "luqman ووصي",
+      "field": "all",
+      "expected": [
+        "31:14"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "31:13",
+            "31:12",
+            "31:16",
+            "31:11",
+            "2:132",
+            "31:19",
+            "31:17",
+            "31:18",
+            "31:10",
+            "31:14"
+          ],
+          "ms": 57.882
+        },
+        "pr1": {
+          "results": [
+            "31:14",
+            "31:13",
+            "31:12",
+            "31:16",
+            "31:11",
+            "2:132",
+            "31:19",
+            "31:17",
+            "31:18",
+            "31:10"
+          ],
+          "ms": 194.237
+        },
+        "fcs": {
+          "results": [
+            "31:14",
+            "31:13",
+            "31:12",
+            "31:16",
+            "31:11",
+            "2:132",
+            "31:19",
+            "31:17",
+            "31:18",
+            "31:10"
+          ],
+          "ms": 34.432
+        }
+      }
+    },
+    {
+      "id": "DM74",
+      "query": "sin يسبح",
+      "field": "all",
+      "expected": [
+        "36:40"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "36:40",
+            "22:18",
+            "24:36",
+            "59:24",
+            "62:1",
+            "64:1",
+            "24:41",
+            "2:181",
+            "17:44",
+            "4:111"
+          ],
+          "ms": 217.011
+        },
+        "fcs": {
+          "results": [
+            "36:40",
+            "24:36",
+            "2:275",
+            "12:108",
+            "22:18",
+            "59:24",
+            "62:1",
+            "64:1",
+            "24:41",
+            "2:181"
+          ],
+          "ms": 31.236
+        },
+        "deploy": {
+          "results": [
+            "22:18",
+            "24:36",
+            "59:24",
+            "62:1",
+            "64:1",
+            "24:41",
+            "2:181",
+            "17:44",
+            "4:111",
+            "6:120"
+          ],
+          "ms": 76.268
+        }
+      }
+    },
+    {
+      "id": "DM75",
+      "query": "zumar اسرف",
+      "field": "all",
+      "expected": [
+        "39:53"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "39:53",
+            "20:127",
+            "39:70",
+            "20:126",
+            "44:30",
+            "42:12",
+            "43:4",
+            "18:45",
+            "39:75",
+            "39:11"
+          ],
+          "ms": 24.414
+        },
+        "deploy": {
+          "results": [
+            "20:127",
+            "39:70",
+            "39:53",
+            "20:126",
+            "44:30",
+            "42:12",
+            "43:4",
+            "18:45",
+            "39:75",
+            "39:11"
+          ],
+          "ms": 41.88
+        },
+        "pr1": {
+          "results": [
+            "39:53",
+            "20:127",
+            "39:70",
+            "20:126",
+            "44:30",
+            "42:12",
+            "43:4",
+            "18:45",
+            "39:75",
+            "39:11"
+          ],
+          "ms": 174.306
+        }
+      }
+    },
+    {
+      "id": "DM76",
+      "query": "hujurat اجتن",
+      "field": "all",
+      "expected": [
+        "49:12"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "49:18",
+            "49:3",
+            "49:4",
+            "60:8",
+            "49:8",
+            "49:15",
+            "49:1",
+            "49:16",
+            "49:17",
+            "49:5"
+          ],
+          "ms": 30.463
+        },
+        "pr1": {
+          "results": [
+            "49:12",
+            "49:18",
+            "49:3",
+            "49:4",
+            "60:8",
+            "49:8",
+            "49:15",
+            "49:1",
+            "49:16",
+            "49:17"
+          ],
+          "ms": 175.211
+        },
+        "fcs": {
+          "results": [
+            "49:12",
+            "49:18",
+            "49:3",
+            "49:4",
+            "60:8",
+            "49:8",
+            "49:15",
+            "49:1",
+            "49:16",
+            "49:17"
+          ],
+          "ms": 20.971
+        }
+      }
+    },
+    {
+      "id": "DM77",
+      "query": "rahman يبغي",
+      "field": "all",
+      "expected": [
+        "55:20"
+      ],
+      "rankings": {
+        "pr1": {
+          "results": [
+            "55:20",
+            "24:20",
+            "57:27",
+            "1:1",
+            "1:3",
+            "18:81",
+            "55:1",
+            "25:60",
+            "24:19",
+            "90:17"
+          ],
+          "ms": 231.453
+        },
+        "fcs": {
+          "results": [
+            "55:20",
+            "24:20",
+            "57:27",
+            "1:1",
+            "1:3",
+            "18:81",
+            "55:1",
+            "25:60",
+            "24:19",
+            "90:17"
+          ],
+          "ms": 37.884
+        },
+        "deploy": {
+          "results": [
+            "24:20",
+            "57:27",
+            "1:1",
+            "1:3",
+            "18:81",
+            "55:1",
+            "25:60",
+            "24:19",
+            "90:17",
+            "10:57"
+          ],
+          "ms": 93.93
+        }
+      }
+    },
+    {
+      "id": "DM78",
+      "query": "hadid وزين",
+      "field": "all",
+      "expected": [
+        "57:20"
+      ],
+      "rankings": {
+        "fcs": {
+          "results": [
+            "57:20",
+            "27:24",
+            "6:43",
+            "48:12",
+            "29:38",
+            "57:29",
+            "57:24",
+            "22:20",
+            "27:23",
+            "64:11"
+          ],
+          "ms": 18.688
+        },
+        "deploy": {
+          "results": [
+            "27:24",
+            "6:43",
+            "48:12",
+            "29:38",
+            "57:29",
+            "57:24",
+            "22:20",
+            "27:23",
+            "64:11",
+            "57:2"
+          ],
+          "ms": 37.129
+        },
+        "pr1": {
+          "results": [
+            "57:20",
+            "27:24",
+            "6:43",
+            "48:12",
+            "29:38",
+            "57:29",
+            "57:24",
+            "22:20",
+            "27:23",
+            "64:11"
+          ],
+          "ms": 169.391
+        }
+      }
+    },
+    {
+      "id": "DM79",
+      "query": "mulk طباق",
+      "field": "all",
+      "expected": [
+        "67:3"
+      ],
+      "rankings": {
+        "deploy": {
+          "results": [
+            "67:30",
+            "67:2",
+            "36:83",
+            "71:14",
+            "16:79",
+            "3:25",
+            "67:24",
+            "67:13",
+            "67:6",
+            "67:25"
+          ],
+          "ms": 34.55
+        },
+        "pr1": {
+          "results": [
+            "67:3",
+            "67:30",
+            "67:2",
+            "36:83",
+            "71:14",
+            "16:79",
+            "3:25",
+            "67:24",
+            "67:13",
+            "67:6"
+          ],
+          "ms": 181.576
+        },
+        "fcs": {
+          "results": [
+            "67:3",
+            "67:2",
+            "67:30",
+            "36:83",
+            "71:14",
+            "16:79",
+            "3:25",
+            "67:24",
+            "67:13",
+            "67:6"
+          ],
+          "ms": 19.37
+        }
+      }
+    }
+  ]
+}

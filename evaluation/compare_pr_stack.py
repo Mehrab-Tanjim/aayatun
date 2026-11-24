@@ -19,7 +19,7 @@ TOP_K = 10
 REVISIONS = {
     "deploy": "d9cff5d3f21dc11423465893fb1839dd6c9251c0",
     "pr1": "bc755b9d2808f8da743494e5a7f516c3f0fcc6e2",
-    "fcs": "91903f3182c04079f883e360309d1d4d9b206222",
+    "fcs": "54990b849f176d722fb087372c8875cb2d7c6e14",
 }
 COMMENTARY_FIELDS = {"ai": "ai", "en_tafsir": "en_tafsir"}
 ARABIC = re.compile(r"[\u0600-\u06ff]")
@@ -274,6 +274,9 @@ def main():
     parser.add_argument("--fixture", type=Path, default=HERE / "commentary_native.jsonl")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--expected-sha256")
+    parser.add_argument(
+        "--field", choices=["all", "ayah", "translation", "en_tafsir", "bn_tafsir", "ai"],
+        help="Override the fixture field scope for generalized regression runs")
     parser.add_argument("--validate-only", action="store_true")
     args = parser.parse_args()
     repo = args.repo.resolve()
@@ -289,6 +292,8 @@ def main():
             raise ValueError("Challenge fixture hash does not match its manifest")
     commentary = fixture.name == "commentary_native.jsonl"
     validation = validate_commentary(repo, cases) if commentary else None
+    if args.field:
+        cases = [{**case, "field": args.field} for case in cases]
     if args.validate_only:
         print(json.dumps({"fixture": fixture.name, "sha256": fixture_hash, "validation": validation}, indent=2))
         return
@@ -320,6 +325,7 @@ def main():
         "fixture_cases": len(cases),
         "answerable_cases": sum(bool(anchors(case)) for case in cases),
         "commentary_validation": validation,
+        "field_override": args.field,
         "success_definition": "At least one expected relevant ayah appears in the first five results.",
         "revisions": revisions,
         "searchnorm_blob_hashes": norm_hashes,
